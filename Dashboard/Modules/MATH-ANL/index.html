@@ -1,0 +1,3642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Module Stack &middot; Mathematical Analysis &middot; User Zero</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Material Icons -->
+          <script src="https://use.fontawesome.com/5a20d27639.js"></script>
+          <script src = "js.js"></script>
+
+          <!-- MathJax -->
+          <script type="text/x-mathjax-config">
+                  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+          <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+          
+<!---_____________ New ____________________-->
+
+<!-- Collapsable Panel -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Sidebar -->
+<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/simple-sidebar.css" rel="stylesheet">
+
+<!-- Pagination -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<style type="text/css">
+
+/*****************************************************************************************************
+ Header Region
+*****************************************************************************************************/
+
+.navbar-one{
+    background: grey;
+    opacity: .9;
+    font-family: 'Avenir', 'light;'; 
+    font-size:12px; border:none; 
+    margin-top:-17px
+}
+
+.navbar-one .navbar-brand {
+    color: white;
+}
+
+.navbar-one .navbar-brand:hover {
+    color: lightgrey;
+}
+
+input[type = search] {
+    width: 79.5%;
+    border: 2px solid grey !important;
+    font-size: 13px;
+    font-family: "Avenir", "Light";
+    background-color: #f2f2f2;
+    padding: 3px 2.5px 3px 25px;
+    margin-top: 11px;
+    margin-bottom: -5px;
+    margin-left: 13px;
+    -webkit-transition: width 0.4s ease-in-out; border:2px;
+    transition: width 0.4s ease-in-out; border:2px;
+    color: grey
+}
+
+input[type=search]:focus {
+    width: 150%;
+    outline: none;
+    border: 2px solid #00ace6;
+}
+
+input[type=search]:hover {
+    border: 2px solid #00ace6 !important;
+    background: white;
+}
+
+.dropdown-toggle{color: white !important; text-decoration: none !important}
+.dropdown-toggle:active, .open .dropdown-toggle {background:none !important; color:#cccccc !important;}
+
+.dropdown-toggle:hover{color: #cccccc !important}
+
+.panel-default{box-shadow: none;}
+.panel-text{border-radius: 0% !important; border:none; background: white}
+.panel-heading{border-radius: 0%; background: linear-gradient(#E5E8E8, #CCD1D1); font-size: 12px;}
+.panel-title{padding:0px;}
+
+
+.btn-default{border-radius: 0%; background: #f2f2f2; color: white; border:1px solid #f2f2f2; font-size: 13px} /* btn-default */
+.btn-default:hover{border: 1px solid #e6e6e6}
+.btn-default:focus{outline: none;}
+
+.btn-chapters{border-radius: 0%; background: none; color: white; border: none; font-size: 13px}
+.btn-chapters:hover{color:grey;}
+
+
+code{background: #f2f2f2; color:grey; border-radius: 0%; font-size: 11px;}
+
+.media-body{color:#515A5A;background: #FFFDFC}
+
+/************************************************************************************************************
+ Carousel
+************************************************************************************************************/
+
+body.o {
+  font-size: 65.5%;
+  font-family: Times;
+  text-decoration: none;
+}
+/* Carousel Styling */
+.slide1{
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  height: 2200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide4{
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide5{
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide6{
+  height: 1060px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide7{
+  height: 1050px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide8{
+  height: 1085px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide9{
+  height: 1040px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide10{
+  height: 1105px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide11{
+  height: 1050px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide12{
+  height: 1165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide13{
+  height: 1040px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide14{
+  height: 1120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide15{
+  height: 1070px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide16{
+  height: 1280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide17{
+  height: 1130px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide18{
+  height: 1180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide19{
+  height: 1100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide20{
+  height: 1070px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide21{
+  height: 1070px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide22{
+  height: 1180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 36px;
+  font-family: 'Georgia';
+  padding-top: 2em;
+  color: grey;
+  text-shadow:none;
+}
+.carousel-caption h2{
+  font-family: 'Georgia';
+  color: white;
+  text-shadow:none;
+}
+.carousel-caption h3{
+  font-family: 'Georgia';
+  color: white;
+  text-shadow:none;
+}
+.carousel-caption h4{
+  font-family: 'Georgia';
+  color: white;
+  text-shadow:none;
+}
+.carousel-inner p{
+  font-size: 14px;
+  font-family: 'times';
+  color: grey;
+  text-shadow:none;
+}
+
+p.one{margin-right: 180px} /* Michael Spivak */
+
+hr.style-three {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 27em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+
+}
+a:hover{
+  color:lightgrey;
+  text-decoration: none;
+}
+
+a.one{color:grey;}
+a.two{font-size: 11px; color: white !important}
+a.two:hover{color: grey !important}
+
+a.three{color: white !important; background: transparent; font-size: 13px} /* sidebar links */
+a.three:hover{color: grey !important; background: none !important} /* sidebar links */
+a.five{color: white !important; margin-left:-10px; font-size:12px!important;} /* dropdown_menu */
+a.five:hover{background: transparent !important; color: #C9D9D7 !important}
+a.six{color:lightgrey;} /*Documents*/
+a.six:hover{color:grey;}
+
+/************************************************************************
+WYSISYG Toolbar
+************************************************************************/
+
+input[type = button] {
+  font-size: 13px !important;
+  font-family: 'Avenir', 'light';
+  background: #F2F5F5; 
+  border:#eee;
+  padding: 10px;
+    }
+
+.btn-WTB {
+  color: #9FABAB;
+  background-color: #F2F5F5;
+  border-color: #F2F5F5;
+  font-family: 'Avenir', 'light';
+  border-radius: 0%;
+}
+
+i.fa-reply {
+    font-size: 1.2em;
+    color:grey;
+}
+i.fa-share {
+    font-size: 1.2em;
+    color:#BDC3C7;
+}
+i.fa-font {
+    font-size: 1.2em;
+    color:grey;
+}
+i.fa-bold {
+    font-size: 1.2em;
+    color:grey;
+}
+i.fa-italic {
+    font-size: 1.2em;
+    color:#grey;
+}
+i.fa-underline {
+    font-size: 1.2em;
+    color:#grey;
+}
+i.fa-n {
+    font-size: 1.3em;
+    color:grey;
+}
+i.fa-n:hover{
+  color: #333333
+}
+i.fa-align-left {
+    font-size: 1.39em;
+}
+i.fa-align-center {
+    font-size: 1.39em;
+}
+i.fa-align-right {
+    font-size: 1.39em;
+}
+i.fa-align-justify {
+    font-size: 1.39em;
+}
+i.fa-list-ul {
+    font-size: 1.5em;
+}
+i.fa-list-ol {
+    font-size: 1.5em;
+}
+i.fa-link {
+    font-size: 1.2em;
+}
+i.fa-chain-broken {
+    font-size: 1.2em;
+}
+i.fa-picture-o {
+    font-size: 1.2em;
+}
+span.glyphicon-indent-right {
+  font-size: 1.4em;
+}
+span.glyphicon-indent-left {
+  font-size: 1.4em;
+}
+i.fa-git {
+    font-size: 1.5em;
+}
+i.fa-jsfiddle {
+    font-size: 1.5em;
+}
+span.glyphicon-folder-open{
+    font-size: 1.1em;
+}
+
+/************* Iframe ********************************/
+
+iframe{
+  border:1px solid #DADFDF;
+  padding: 20px;
+  width:100%;
+  height: 500px;
+  margin-top:-40px;
+  background: white;
+}
+
+textarea{
+  color:lightgrey;
+  border:none;
+  padding: 20px 20px 20px 20px;
+  width:100%;
+  height: 1250px;
+  margin-top:0px;
+  background: white;
+  font-size: 12px;
+  font-family: 'Arial';
+  text-indent:-87px;
+}
+
+textarea:focus{outline: none; color:grey;}
+
+.mathJax{
+  font-size:13.5px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+}
+.carousel-control.left {
+  background: #f2f2f2
+  
+}
+.carousel-control.right {
+  background: #f2f2f2
+}
+.carousel-control:hover,
+.carousel-control:focus {
+
+  outline: 0;
+  opacity: .5;
+}
+
+.thumbnail{border-radius: 0%; border: 1px solid #C6D9E0; padding:0 15px 0 20px; background: white;}
+.thumbnail:hover{cursor: default}
+
+hr{border-top: 1px solid lightgrey}
+
+</style>
+</head>
+
+
+<!-- ____________________________________________________________________ Body ____________________________________________________________________ -->
+
+<body onLoad = "iframe()" style="background:#f8f8f8">
+
+<!-- ******************************************************************
+ Navbars & Carousel
+******************************************************************** -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-one navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!-- Toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <!-- Brand -->
+      <a class="navbar-brand" href="../../../HRTDB/index.html" style="font-size:17px; padding-top:24px; padding-left:20px">hilix</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <div style="margin-top:27px">
+                <a href="#" class="dropdown-toggle"
+                            data-toggle="dropdown" 
+                            role="button" 
+                            aria-haspopup="true"
+                            aria-expanded="false">Course Tracks <span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="width:1466%; background: #BBD0DD; border: 1px solid #BBD0DD; margin-top:6px; margin-left:-70px; 
+                                                      border-radius:0%; padding-right:50px">
+                        
+                        <li>
+              <div class="jumbotron" style="background: #BBD0DD; color:white; font-size: 13px">
+                <div class="row" style="padding-left:110px">
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Pure Mathematics</h5>
+                    Introduction to analysis
+                    <br>
+                    Differential equations
+                    <br>
+                    Linear algebra
+                    <br>
+                    Multvariable calculus
+                    <br>
+                    Abstract algebra
+                    <br>
+                    Elementary topology
+                    <br>
+                    Real analysis
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Applied Mathematics</h5>
+                    Calculus
+                    <br>
+                    Differential equations
+                    <br>
+                    Linear algebra
+                    <br>
+                    Multvariable calculus
+                    <br>
+                    Abstract algebra
+                    <br>
+                    Mathematical statistics
+                    <br>
+                    Numerical analysis
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Bioinformatics</h5>
+                    Calculus
+                    <br>
+                    CS probability
+                    <br>
+                    Structure and reactivity
+                    <br>
+                    Genetics
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Mechanics
+                    <br>
+                    Programming methodology
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12" style="margin-bottom:20px">
+                    <h5>Computer Engineering</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    CS probability
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    Programming languages 
+                    <br>
+                    Operating systems
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Computational Theory</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL Theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Mathematics</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    OperatingsSystems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL Theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Computer Science</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Computer Science</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  </div>
+                </div>
+            </li>
+                        
+                    </ul>
+            </div>
+        </li>
+      </ul>
+
+      <!-- Search -->
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="search" 
+                 placeholder="Search..." 
+                 style="background-image: url('search.png'); background-repeat:no-repeat;" >
+        </div>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <div style="margin-top:7px; padding-right: 10px">
+                <i class="fa fa-bar-chart" aria-hidden="true" style="padding-top:20px; font-size:14px; color:lightgrey"></i>
+            </div>
+        </li>   
+        <li class="dropdown" style="margin-top:1px">
+            <div style="margin-top:24px; padding-right:20px">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown" 
+                role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons" aria-hidden="true" style="margin-top:-1px; font-size:19px">apps</i>
+                <ul class="dropdown-menu" 
+                    style="margin-top:2px; font-size:13px; border-radius:0%; background:linear-gradient(lightgrey, grey); border: none; padding:25px">
+                    <div align="center"><img src="Images/stel_icoso.png" style="padding-left:15px"> 
+                        <br> 
+                        <h5 style="color:white; padding-left:15px">hILIXRT</h5>
+                        <a class="five" href="" style="font-size:14px; padding-left:24px">@hilixrt</a> 
+                        <span style="color:white; padding-left:0px"></span> 
+                        <a class="five" href="../../../index.html" style="font-size:12px; padding-left:15px; color:#C9D9D7 !important">SIGNOUT</a>
+                    </div>
+                    <br>
+                    <li role="separator" class="divider"></li>
+                    <br>
+                    <li><a class="five" href="../../index.html">Hilix Admin</a></li>
+                    <li><a class="five" href="../../../Profiles/HILIXRT/user_0.html">My Portfolio</a></li>
+                    <li><a class="five" href="../../../HRTDB/index.html">Hilix Database</a></li>
+                    <li><a class="five" href="#">Account settings</a></li>
+                    <br>
+                    <li role="separator" class="divider"></li>
+                    <br>
+                    <li><a class="five" href="#">Manage storage space</a></li>
+                    <br>
+                </ul>
+            </div>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Siderbar -->
+    <div id="wrapper" style="margin-top:53px">
+        <div id="sidebar-wrapper" style="background: linear-gradient(lightgrey, grey)">
+            <ul class="sidebar-nav" style="background:transparent">
+                <li class="sidebar-brand"> 
+                    <a class="three" style="background: linear-gradient(lightgrey, grey)!important; font-size:15px; font-family:'Arial'" 
+                       href="../../index.html">
+                      <i class="fa fa-database"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a class="three" style="margin-top:-7px" href="#">Net Statistics</a>
+                </li>
+                <li>
+                    <a class="three" style="color:grey !important" href="../index.html">Module Stack</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Problem Sets</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Mathematica</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Hilix Shasta</a>
+                </li>
+                <li>
+                    <a class="three" href="#">JS Fiddle</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Conversations</a>
+                </li>
+                </li>
+                <li>
+                    <a class="three" href="#">Hilix Software</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Solution Sets</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Media Files</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Research Docs</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Math Textbooks</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Logic Textbooks</a>
+                </li>
+                <li>
+                    <a class="three" href="#">CS Textbooks</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Ling Textbooks</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Hilix Corpora</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top:-17px">
+
+
+
+
+<!--_____________________________ Modules ______________________________ -->
+
+
+<table style="width:100%;">
+    <tr>
+      <td>
+        <h5 style="color:lightgrey; margin-bottom:17px">Mathematical Analysis</h5>
+      </td>
+      <td>
+        <a href="../index.html">
+          <i class="material-icons" aria-hidden="true" style="float:right">fullscreen_exit</i>
+        </a>
+      </td>
+    </tr>
+  </table>
+                         
+  <div class="panel-group" id="accordion">
+    <div class="panel-text panel-default">
+      <div class="panel-heading" style="padding-top:3px !important">
+        <p class="panel-title">
+          <table style="width: 100%">
+              <tr>
+                  <td>
+                    <div style="margin-top:-2px">
+                      <a class="three" data-toggle="collapse" href="#collapse1">
+                        <span>Calculus, Fourth Edition &#160 &mdash; &#160 Michael Spivak</span>
+                      </a>
+                    </div>
+                  </td>
+                  <td>
+                    <div style="margin-top:-17px; font-size:8px !important" align="right">
+                      <ul class="pagination" style="margin-top:0px; margin-bottom:0px">
+                        <li data-target="#theCarousel">
+                          <a class="two" href="#" style="border-radius:0%; margin-right:-8px">
+                            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true" style="font-size:10px">
+                          </a>
+                        </li>
+                        <li class="prev" data-target="#theCarousel" data-slide="prev">
+                            <a class="two" style="border-radius:0%" href="#" aria-label="Previous">
+                                <span aria-hidden="true">
+                                  <span class="glyphicon glyphicon-triangle-left" aria-hidden="true" style="font-size:10px">
+                                  </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li data-target="#theCarousel" data-slide-to="0"><a class="two" href="#">1</a></li>
+                        <li data-target="#theCarousel" data-slide-to="1"><a class="two" href="#">2</a></li>
+                        <li data-target="#theCarousel" data-slide-to="2"><a class="two" href="#">3</a></li>
+                        <li data-target="#theCarousel" data-slide-to="3"><a class="two" href="#">4</a></li>
+                        <li data-target="#theCarousel" data-slide-to="4"><a class="two" href="#">5</a></li>
+                        <li data-target="#theCarousel" data-slide-to="5"><a class="two" href="#">6</a></li>
+                        <li data-target="#theCarousel" data-slide-to="6"><a class="two" href="#">7</a></li>
+                        <li data-target="#theCarousel" data-slide-to="7"><a class="two" href="#">8</a></li>
+                        <li data-target="#theCarousel" data-slide-to="8"><a class="two" href="#">9</a></li>
+                        <li data-target="#theCarousel" data-slide-to="9"><a class="two" href="#">10</a></li>
+                        <li class="next" data-target="#theCarousel" data-slide="next">
+                            <a class="two" style="background:#FFFDFC; border-radius:0%" href="#" aria-label="Next">
+                                <span aria-hidden="true">
+                                  <span class="glyphicon glyphicon-triangle-right" aria-hidden="true" style="font-size:10px">
+                                  </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li data-target="#theCarousel">
+                          <a class="two" href="#" style="border-radius:0%; margin-left:-8px">
+                            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true" style="font-size:10px">
+                          </a>
+                        </li>
+                      </ul> 
+                    </div> 
+                  </td>   
+              </tr>
+          </table>
+        </p>
+    </div>
+    <!-- Moves the active indicator -->
+    <script>
+      $(document).ready(function() {
+        var pageItem = $(".pagination li").not(".prev,.next");
+        var prev = $(".pagination li.prev");
+        var next = $(".pagination li.next");
+        pageItem.click(function() {
+          pageItem.removeClass("active");
+          $(this).not(".prev,.next").addClass("active");
+        });
+        next.click(function() {
+          $('li.active').removeClass('active').next().addClass('active');
+        });
+        prev.click(function() {
+          $('li.active').removeClass('active').prev().addClass('active');
+        });
+      });
+    </script>
+
+<div id="collapse1" class="panel-collapse collapse">
+<div class="panel-body">
+<!-- Carousel -->
+<!-- Surround everything with a div with the class carousel slide -->
+<div id="theCarousel" class="carousel slide" data-interval="false" style="margin-top: 0px; border: 1px solid #f2f2f2">
+ 
+  <!-- Define the text to place over the image -->
+  <div class="carousel-inner">
+
+    <div class="item active">
+    <div class ="slide1"></div>
+    <div class="carousel-caption" style="padding-right:30px; background: lightgrey; opacity:.5; text-align:justify">
+      <div style="padding-left:200px;">
+        <h1 style="color:white">CALCULUS</h1>
+        <h3>Fourth Edtion</h3>
+        <h4 style="padding-bottom:25em"><i>Michael Spivak</i></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+  <div class="slide2"></div>
+  <div class="carousel-caption" style="text-align:left">
+    <h3 style="color:grey; margin-left:73px">PREFACE TO THE FOURTH EDITION</h3>
+  <div class="carousel-inner" style="text-align:justify; margin-top:50px; margin-left:75px; margin-bottom:280px">
+    <p style="width:80%;">
+      Promises, Promises! In the preface to the third edition I noted that it was thirteen years between the first and second editions, 
+      and then another fourteen yeras before the third, expressing the hope that the next edition would happen sooner. Well, here it is 
+      another fourteen years later before the fourth, and presumably final, edition.
+      
+      <br>
+      <br>
+
+      &#160 &#160 Although small chaanges have been made to some mterial, especially in chapters five and twenty, 
+      this edition differes mainly in the introduction of additional problems, a complete update of the sugested reading, 
+      and the correction of numerous errors. These have been brought to my attention over the years by, among others, Nils von Barth; 
+      Philip Loewen; Fernando Mejias; Lance Miller, who provided a long list; particularly for the answer book; and Michael Meltonfort,
+      who provided an amazingly extensive list of misprints, errors and criticisms. 
+      
+      <br>
+      <br>
+      
+      &#160 &#160 Most of all however, I am endebted to my friend Ted Shifrin, who has been using the book for the text in his renowned course 
+      at the Univerity of Georgia for all these years, and who prodded and helped me to finally make this needed revision. I must also thank 
+      the students in his course this last academic year, who served as guinea pigs for the new edition, resulting, in particular, in the current 
+      proof in Problem8-20 for the Rising Sun Lemma, far simpler then Reisz'soriginal proof, or even the proof in [38] of the Suggested Reading, 
+      which itself has now been updated considerably, again with great help from Ted.
+      <br>
+      <p class="one" style="text-align: right; font-weight:bold; font-size:15px; margin-right:120px">MICHAEL SPIVAK</p>
+  </p>
+</div>
+  </div>
+  </div>
+
+  <div class="item">
+  <div class="slide3"></div>
+  <div class="carousel-caption">
+    <h1>CONTENTS</h1>
+  <div class="carousel-inner" style="padding-bottom:60px">
+    <p>
+       <table class="table table-bordered table-striped">
+        <tr>
+          <th><p>PREFACE</p></th>
+          <th><p>vi</p></th>
+        </tr>
+
+        <tr>
+          <th><p>PART I</p></th>
+          <th><p>Prologue</p></th>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">1 &#160 Basic Properties of Numbers &#160 3</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">2 &#160 Numbers of Various Sorts &#160 21</p></td>
+        </tr>
+
+         <tr>
+          <th><p>PART II</p></th>
+          <th><p>Foundations</p></th>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">3 &#160 Functions &#160 39 <br> <i> &#160 &#160 Appendix. &#160 Ordered Pairs</i> &#160 54</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">4 &#160 Graphs &#160 56</span>
+          <br> <i> &#160 &#160 Appendix 1. &#160 Vecors </i> &#160 54
+          <br> <i> &#160 &#160 Appendix 2. &#160 The Conic Sections</i> &#160 80
+          <br> <i> &#160 &#160 Appendix 3. &#160 Polar Coordinates</i> &#160 84
+          </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">5 &#160 Limits &#160 90</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">6 &#160 Continuous Functions &#160 115</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">7 &#160 Three Hard Theorems &#160 122</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">8 &#160 Least Upper Bounds &#160 133
+            <br> <i> &#160 &#160 Appendix. &#160 Uniform Continuity</i> &#160 144
+          </p>
+        </td>
+        </tr>
+
+        <th><p>PART III</p></th>
+          <th><p>Derivatives and Integrals</p></th>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">9 &#160 Derivatives &#160 149 </p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">10 &#160 Differentiation &#160 168</span></p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">11 &#160 Significance of the Derivative &#160 188
+          <br> <i> &#160 &#160 &#160 Appendix. &#160 Convexity and Concavity</i> &#160 219
+          </p>
+        </td>
+        </tr>
+
+       <tr>
+          <td></td>
+          <td><p style="text-align:left">12 &#160 Inverse Functions &#160 230
+          <br> <i> &#160 &#160 &#160 Appendix. &#160 Parametric Representations of Curves </i> &#160 244
+          </p>
+        </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">13 &#160 Integrals &#160 253
+          <br> <i> &#160 &#160 &#160 Appendix. &#160 Riemann Sums </i> &#160 282
+          </p>
+        </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">14 &#160 The Fundamental Theorem of Calculus &#160 285</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">15 &#160 The Trigonometric Functions &#160 303</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">*16 &#160 <i>&pi;</i> is Irrational &#160 324</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">*17 &#160 Planetary Motion &#160 330</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">18 &#160 The Logarithm and Exponetial Functions &#160 339</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">19 &#160 Integration in Elementary Terms &#160 363
+            <br> <i> &#160 &#160 &#160 Appendix. &#160 The Cosmopolitan Integral </i> &#160 402
+          </p>
+        </td>
+        </tr>
+
+        <th><p>PART IV</p></th>
+          <th><p>Infinite Sequences and Infinite Series</p></th>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">20 &#160 Approximation by Polynomial Functions &#160 411 </p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">*21 &#160 <i>e</i> is Transcendental &#160 442</span></p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">22 &#160 Infinite Sequences &#160 452</p></td>
+        </tr>
+
+       <tr>
+          <td></td>
+          <td><p style="text-align:left">23 &#160 Infinite Series &#160 471</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">24 &#160 Uniform Convergence and Power Series &#160 499</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">25 &#160 Complex Numbers &#160 526</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">26 &#160 Complex Functions &#160 541</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">27 &#160 Complex Power Series &#160 555</p></td>
+        </tr>
+
+       <th><p>PART IV</p></th>
+          <th><p>Epilogue</p></th>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">28 &#160 Fields &#160 581</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">29 &#160 Construction of the Real Numbers &#160 588</p></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><p style="text-align:left">30 &#160 Uniqueness of The Real Numbers  &#160 601
+            <br>
+            <br>
+             <i> &#160 &#160 &#160 Suggested Readig</i> &#160 609
+             <br>
+             <i> &#160 &#160 &#160 Answers to (selected problems) </i> &#160 619
+             <br>
+             <i> &#160 &#160 &#160 Glossary of Symbols </i> &#160 665
+             <br>
+             <i> &#160 &#160 &#160 Index </i> &#160 669
+          </p>
+        </td>
+        </tr>
+
+      </table>
+
+    </p>
+  </div>
+   </div>
+  </div>
+
+  <!-- Slide Four -->
+  <div class="item">
+    <div class ="slide4"></div>
+    <div class="carousel-caption" style="text-align:left; margin-left:100px; border-left:1px solid lightgrey">
+      <h1 style="padding-left:20px">PART 1 &#160&#160 PROLOGUE</h1>
+      <br>
+      <p><div style="width:75%; background: linear-gradient(to right, lightgrey, white); margin-bottom:525px">&#160</div>
+      </p>
+    </div>
+  </div>
+
+<!-- Slide Five -->
+<div class="item">
+  <div class="slide5"></div>
+  <div class="carousel-caption" style="text-align:center;">
+    <h3 style="color:grey">CHAPTER <span style="font-size:55px; font-family:'Arial'">I</span> BASIC PROPERTIES OF NUMBERS </h3>
+  <div class="carousel-inner" style="text-align:justify; margin-top:50px; margin-bottom:20px; margin-left:88px;">
+    <p style="width:75%;">
+      The title of this chapter expresses in a few words the mathematical knowledge required to read this book. In fact, 
+      this short chapter is simply an explanation of what is meant by the "basic properties of numbers," all of which&mdash;addition and
+      multiplication, subtraction and division, solutions of equations and inequalities, factoring and other algebraic manipulations&mdash;are
+      already familiar to us. Never-theless, this chapter is not a review. Despite the familiarity of the subject, the survey we are about to 
+      undertake will probably seem quite novel; it does not aim to present an extended review of old material, but to condesnse this knowledge into
+      a few simple and obvious properties of numbers. Some may even seem too obvious to mention, but a surprising number of diverse and important 
+      facts turn out to be consequences of the ones we shall emphasize.
+    </p>
+      
+      
+      <p style="width:75%; text-indent:15px">
+      Of the twelve properties which we shall study in this chapter, the first nine are concerned with the fundamental operations of addition 
+      and multiplication. For the moment we consider only addition: this operation is performed on a pair of numbers&mdash;the sum $a+b$ exists for any two numbers $a$
+      and $b$ (which may possibly be the same number, of course). It might seem reasonable to regard addition as an operation which can be performed on several numbers 
+      at once, and consider the sum $a_1 + \dots + a_n$ of $n$ numbers $a_1, \dots, a_n$ as a basic concept. It is more conveniont, however, to consider addition of pars 
+      of numbers only, and to define other sums in terms of sums of this type. For the sum of three numbers $a, b$ and $c$, this may be done in two different ways. One 
+      can first add $b$ and $c$, obtaining $b+c$, and then add $a$ to this sum, obtaining $a + (b+c)$. Of course, the two compound sums obtained are equal, and this fact 
+      is the very first property we shall list:
+      </p>
+
+      <p style="width:75%; text-align:left">
+        <span style="padding-left:40px"> P1) &#160 If $a, b \ \text{and} \ c$, are any numbers, then</span> 
+          $$a + (b + c) = (a + b) + c.$$
+      </p>
+
+      <p style="width:75%;">
+      The statement of this property clearly renders a seperate concept of the sum of three numbers superfluous; we simply agree that $a+b+c$ denotes the number 
+      $a + (b+c) = (a+b) + c$. Addition of four numbers
+      requires similar, though slightly more involved, considerations. The symbol $a+b+c+d$
+      is defined to mean
+      
+      <p style="padding-right:250px">
+        $$\begin{array}{lcl} 
+        & \ \ & (1) \ \ \ ((a+b)+c)+d, \\
+        &\text{or}& (2) \ \ \ (a+(b+c))+d, \\
+        &\text{or}& (3) \ \ \ a+((b+c)+d), \\
+        &\text{or}& (4) \ \ \ a+(b+(c+d)), \\
+        &\text{or}& (5) \ \ \ (a+b)+(c+d). \\
+        \end{array}$$
+      </p>
+
+    </p>
+</div>
+  </div>
+  </div>
+
+  <!-- Slide Six -->
+<div class="item">
+  <div class="slide6"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    <p style="width:75.5%;">
+      This definition is unambiduous since these numbers are all equal. Fortunately <i>this</i> fact need not be listed separately, since it follows
+      from the property <span style="font-weight:bold">P1</span> already listed. For example, we know from <span style="font-weight:bold">P1</span> 
+      that $$(a+b)+c=a+(b+c)$$
+    </p>
+      
+      <p style="width:75%;">
+      and it follows immediately that (1) and (2) are equal. The equality of (2) and (3) is a direct consequence of <span style="font-weight:bold">P1</span>, although 
+      this may not be apparent at first sight, (one must let $b+c$ play the role of $b$ in <span style="font-weight:bold">P1</span> and $d$ the role of $c$.) The equalities
+      $(3)=(4)=(5)$ are also simple to prove.
+      </p> 
+
+      <p style="width:75%; text-indent:15px">
+      It is probaly obvious that an appeal to <span style="font-weight:bold">P1</span> will also suffice to prove the equality of the fourteen
+      possible ways of summing five numbers, but it may not be so clear how we can resonably arrange a proof that this is so without actually listing 
+      these fourteen sums. Such a procedure is feasable, but would soon sease to be if considered collections of six, seven or more numbers; it would 
+      be totally inadequate to prove the equality of all possible sums of an arbitrary finite collection of numbers $a_1, \dots, a_n.$ This fact may be taken for granted, 
+      but for those who would like to worry about the proof (and it is worth worrying about once) a reasonable aproach is outlined in Problem 24. Henceforth, we shall 
+      usually make a tacit appeal to the results of this problem and write sums $a_1 + \dots + a_n$ with a blithe disregard for the arrangements of parantheses. 
+      </p>
+      
+      <p style="width:75%;">
+      The number 0 has one property so important that we list it next: 
+      
+      <br>
+      <br>
+
+      <span style="padding-left:40px"> (P2) &#160 If $a$ is any number, then</span> $$a+0=0+a=a$$
+      </p>
+      
+      <p style="width:75%;">
+      An important role is also played by 0 in the third property of our list:
+      
+      <br>
+      <br>
+
+      <span style="padding-left:40px"> (P3) &#160 For every number $a$, there is a number $-a$ such that</span> $$a+(-a)=-a+a=0.$$
+      </p>
+      
+      <p style="width:75%;">
+      Property <span style="font-weight:bold">P2</span> ought to represent a distinguishing characteristic of the number 0, and it is comforting to
+      note that we are already in a position to prove this. Indeed, if a number $x$ satisfies $$a+x=a$$
+      </p>
+
+      <p style="width:75%;">for any one number $a$, then $x=0$ (and consequently this equation also holds for all numbers $a$). The proof of this assertion involves 
+        nothing more then subtracting $a$ from both sides of the equation, in other words, adding $-a$ to both sides; as the following detailed proof shows, all three 
+        properties <span style="font-weight:bold">P1&ndash;P3</span> must be used to justify this operation
+
+        $$\begin{array}{rcl}\text{If} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a+x&=&a, \\ 
+        \mathbb{then} \ \ \ \ \ \ (-a)+(a+x) &=& (-a)+a=0; \\ 
+        \text{hence}\ \ \ \ ((-a)+a)+x &=& 0; \\ 
+        \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0+x &=& 0; \\ 
+        \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x &=& 0.\end{array}$$</p>
+      </p>
+    </p>
+</div>
+  </div>
+  </div>
+
+   <!-- Slide Seven -->
+<div class="item">
+  <div class="slide7"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <p style="width:75%;text-indent:15px">
+      As we have just hinted, it is convenient to regard subtraction as an operation derived from addition: we consider 
+      $a-b$ to be an abbreviation for $a+(-b).$ Its is then possible to find the solution of certain simple equations by a 
+      series of steps (each justified by <span style="font-weight:bold">P1</span>, <span style="font-weight:bold">P2</span>, or 
+      <span style="font-weight:bold">P3</span>) Similar to the ones just presented for the equation $a+x=a.$ For example:
+      
+      $$\begin{array}{rcl}\text{If} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a+x&=&a, \\ 
+      \text{then} \ \ \ \ \ \ (-a)+(a+x) &=& (-a)+a=0; \\ 
+      \text{hence}\ \ \ \ ((-a)+a)+x &=& 0; \\ 
+      \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0+x &=& 0; \\ 
+      \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x &=& 0.\end{array}$$
+      </p>
+      
+      <p style="width:75%;">
+      Naturally such elaborate solutions are of interest only until you become convinced that they can always be supplied. In practice, it is usually
+      just a wate of time to solve an equation by indicating so explicitly the reliance on properties <span style="font-weight:bold">P1</span>, 
+      <span style="font-weight:bold">P2</span>, or <span style="font-weight:bold">P3</span> (or any of the properties we shall list).
+      
+      <br>
+      <br>
+
+      &#160 &#160 Only one other property of addition remains to be listed. When considering the sums of three numbers $a, b,$ and $c,$ only two sums were 
+      mentioned: $(a+b)+c$ and $a+(b+c)$ Actually, several other arrangements are obtained  if the order of $a, \ b,$ and $c$ is changed. That these sums are all 
+      equal depends on 
+      
+      <br>
+      <br>
+
+      <span style="; margin-top:-10px; padding-left:40px">(P4)</span> &#160 If $a$ and
+      $b$ are any numbers, then $$a+b=b+a$$
+
+      <p style="width:75%; text-indent: 10px">
+      &#160 The statement of <span style="font-weight:bold">P4</span> is meant to emphasize that although the operation of addition of pairs of 
+      numbers might conceivably depend on the order of the two numbers, in fact it does not. It is helpful to remember that not all operations are so
+      well behaved. For example, subtraction does not have this property: usually $a-b \neq b-a.$ In passing we might ask just when $a-b$ does equal  $b-a$, 
+      and it is amusing to discover how powerless we are if we rely only on properies <span style="font-weight:bold">P1&ndash;P4</span> to justify our 
+      manipulations. Algebra of the most elementary variety shows that $a-b=b-a$</span> only when $a=b$</span>. Nevertheless, it is impossible to derive this 
+      fact from properties <span style="font-weight:bold">P1&ndash;P4</span>; it is instructive to examine the elementary algebra carefully and determine which 
+      step(s) connot be justified by <span style="font-weight:bold">P1&ndash;P4</span>. We will indeed be able to justify all steps in detail when a few more 
+      properties are listed. Oddly enough, however, the crucial property involves multiplication.
+      
+      <br>
+      <br>
+
+      &#160 &#160 The basic properties of multiplication are furtunately so similar to those for addition that little comment will be needed; 
+      both the meaning and the consequences should be clear. (As in elementary algebra, the product of $a$ and $b$ will be denoted $a \cdot b$ or simply $ab).$
+
+
+      <br>
+
+      <!-- (P5) -->
+      <span style="; margin-top:-30px; padding-left:40px">(P5)</span> &#160 If $a, b$ and $c$ are any numbers, then $$a \cdot (b \cdot c) = (a \cdot b) \cdot c$$
+
+      <!-- (P6) -->
+      <span style="; margin-top:-30px; padding-left:45px">(P6)</span> &#160 If $a$ is any number, then $$a \cdot 1 = 1 \cdot a = a.$$
+      
+  </div>
+  </div>
+  </div> 
+
+
+  <div class="item">
+  <div class="slide8"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <p style="width:75%; padding-left: 80px">$\text{Moreover,} \ 1 \neq 0.$</p>
+
+    <p style="width:75%; padding-left: 40px">
+      (The assertion that $1 \neq 0$ may seam a strange fact to list, but we have list it, because there is no way it could possibly be proved on the basis of the other 
+      properties listed&mdash;these properties would all hold if there were only
+      one number, namely, 0.)
+    </p>
+
+    <p style="width:75%;">
+      <span style="; margin-top:-10px; padding-left:40px">(P7)</span> &#160 For every number
+      $a \neq 0,$ there is a number $a^{-1}$
+      such that $$a \cdot a^{-1} = a{-1} \cdot a = 1.$$
+
+      <span style="; margin-top:-10px; padding-left:40px">(P8)</span> &#160 If $a$ and $b$ are any two numbers, then $$a \cdot b = b \cdot a.$$
+    </p>
+      
+      
+    <p style="width:75%; text-indent: 15px">
+      One detail which deserves emphasis is the appearence of the condition $a \neq 0$ in <span style="font-weight:bold">P7</span>. This condition is quite neccessary; 
+      since $0 \cdot b = 0$ for all numbers $b$, there is <i>no</i> number $0^{-1}$ satisfying $0 \cdot 0^{-1} = 1.$ This restriction has an important consequence for 
+      division. Just as subtraction was defined in terms of addition, so division is defined in terms of multiplication: The symbol $a/b$ means $a \cdot b^{-1}.$ Since
+      $0^{-1}$ is meaningless, $a/0$ is also meaningless&mdash;division by 0 is <i>always</i> undefined.
+      <br>
+      <br>
+      <span style="padding-left:15px">Property <span style="font-weight:bold">P7</span> has two important consequences.</span> If $a \cdot b = a \cdot c$</span>, it does 
+      not neccessarily follow that $b=c$; for if $a=0,$ then both $a \cdot b$ and $a \cdot c$ are 0, no matter what $b$ and $c$ are. However, if $a \neq 0$, then $b=c$;
+      this can be deduced from <span style="font-weight:bold">P7</span> as follows:
+      
+        $$\begin{array}{rcl}\textrm{If} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a \cdot b &=& a \cdot c, \ \text{and} \ a \neq 0 \\ 
+        \text{then} \ \ \ \ \ \ \ \ \ a^{-1} \cdot (a \cdot b) &=& a^{-1} \cdot (a \cdot c); \\ 
+        \text{hence}\ \ \ \ \ \ \ (a^{-1} \cdot a) \cdot b &=& (a^{-1} \cdot a) \cdot c; \\ 
+        \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1 \cdot b &=& 1 \cdot c; \\ 
+        \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b &=& c.\end{array}$$
+    </p>
+
+      <p style="width:75%;">
+        It is also a consequence of <span style="font-weight:bold">P7</span> that if $a \cdot b=0,$ Then either $a=0$ or Then either $b=0.$ In fact,
+
+        $$\begin{array}{rcl}
+        \text{if} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a \cdot b &=& 0, \ \text{and} \ a \neq 0 \\ 
+        \text{then} \ \ \ \ \ \ \ \ \ a^{-1} \cdot (a \cdot b) &=& 0; \\ 
+        \text{hence}\ \ \ \ \ \ \ (a^{-1} \cdot a) \cdot b &=& 0; \\ 
+        \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1 \cdot b &=& 0; \\ 
+        \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b &=& 0.\end{array}$$
+    </p>
+
+    <p style="width:75%;">
+      (It may happen that $a=0$ and $b=0$ are both true; this possibility is not excluded when we say "either $a=0$ or $b=0$"; in mathematics "or" is always used in he 
+      sense of "one or the other, or both.")
+      
+      <br>
+      <br>
+
+      <span style="padding-left:15px">This</span> latter consequence of <span style="font-weight:bold">P7</span> is constantly used in the solution of
+      equations. Suppose for example that a number $x$ is known to satisfy $$(x-1)(x-2) = 0.$$
+
+      Then it follows that either $x-1=0$ or $x-2=0$; hence $x=1$ or $x=2.$
+    </p>  
+      
+  </div>
+  </div>
+  </div> 
+
+
+  <div class="item">
+  <div class="slide9"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:100px">
+    
+    <p style="width:75%; text-indent: 15px">
+      On the basis of the eight properties listed so far it is still possible to prove very little. Listing the next property, which combines the
+      operations of addition and multiplication, will alter this situation drastically.
+    </p>
+
+    <p style="width:75%;">
+      <span style="; padding-left:40px">(P9)</span> &#160 If $a, b,$ and $c$ are any numbers, then $$a \cdot (a+b) = a \cdot b + a \cdot c.$$
+
+      (Notice that the equation $(b+c) \cdot a = b \cdot a + c \cdot a.$ is also true, by <span style="font-weight:bold">P8</span>.)
+    </p>
+            
+    <p style="width:70%;">
+      As an exampe of the usefulness of <span style="font-weight:bold">P9</span> we will now determine just when $a-b = b-a:$
+      
+        $$\begin{array}{rcl}\textrm{If} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a - b &=& b - a, \\ 
+        \text{then} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (a-b) + b &=& (b-a) + b = b + (b-a); \\ 
+        \text{hence}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a &=& b+b-a; \\ 
+        \text{hence} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a+a &=& (b+b-a)+a = b+b. \\ 
+        \text{Consequently} \ \ \ \ \ \ \ \ a \cdot(1+1) &=& b \cdot(1+1),\\ 
+        \text{and therefore} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a &=& b .\end{array}$$
+    </p>
+      
+    <p style="width:77%;">
+      A second use of <span style="font-weight:bold">P9</span> is a justification of the assertion $a \cdot 0 = 0$, which we have already made, and even used in a proof 
+      aon page 6 (can you) you find where?). This fact was not listed as one of the basic properties, even though no proof was offered when it was first metioned.
+      With <span style="font-weight:bold">P1&ndash;P8</span> alone a proof was not possible, since the number 0 appears only in 
+      <span style="font-weight:bold">P2</span> and <span style="font-weight:bold">P3</span>, which concern addition, while the assertion in question
+      involves multiplication. With <span style="font-weight:bold">P9</span> the proof is simple, though perhaps not obvious: We have <br>
+
+      $$\begin{array}{lcl} a \cdot 0 + a \cdot 0 &=& a \cdot (0+0) \\ \ &=& a \cdot 0; \end{array}$$
+    </p>
+
+      <p style="width:75%;">
+        as we have already noted, this immdiately implies (by adding $-(a \cdot 0)$ to both sides) that $a \cdot 0 = 0.$In fact,
+
+    <p style="width:75%; text-indent:15px">
+      A series of further consequences of <span style="font-weight:bold">P9</span> may help to explain the somewhat mysterious rule that the product
+      of two negative numbers is positive. To begin wih, we will establish the more easily accebtable assertion that $(-a) \cdot b = -(a \cdot b).$ To prove this, note 
+      that 
+
+      $$\begin{array}{lcl} (-a) \cdot b + a \cdot b &=& [(-a) + a] \cdot b \\ \ &=& 0 \cdot b \\ \ &=& 0.\end{array}$$ 
+    </p>
+
+    <p style="width:75%;">
+      It follows immediately (by $-(a \cdot b)$ to both sides) that $(-a) \cdot b = -(a \cdot b)$. Now note that
+
+        $$\begin{array}{lcl} (-a) \cdot (-b) + [-(a \cdot b)] &=& (-a) \cdot (-b) + (-a) \cdot b \\ 
+        \ &=& (-a) \cdot [(-b) + b] \\ 
+        \ &=& (-a) \cdot 0 \\
+        \ &=& 0.
+        \end{array}$$
+    </p>  
+      
+  </div>
+  </div>
+  </div>
+
+
+  <div class="item">
+  <div class="slide10"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <p style="width:75%">
+      Consequently, adding $(a \cdot b)$ to both sides, we obtain $$-(a) \cdot (-b) = a \cdot b.$$
+    </p>
+
+    <p style="width:75%">
+      The fact that the product of two negative numbers is positive, is thus a consequence of
+      <span style="; margin-top:-10px; font-weight:bold">(P1&ndash;P9)</span>, In other words, <i>if we want 
+      <span style="; margin-top:-10px; font-weight:bold">P1</span> to <span style="; margin-top:-10px; font-weight:bold">P9</span> to
+      be true, the rule for the product of two negative numbers is forced upon us</i>.
+    </p>
+            
+    <p style="width:77%; text-indent:15px">
+      The various consequences of <span style="font-weight:bold">P9</span> examined so far, although interesting and imprtant, do not realy indicate
+      the importance of <span style="font-weight:bold">P9</span>; after all we could have listed each of these properties seperately. Actually
+      <span style="font-weight:bold">P9</span> is the justification of almost al algebraic manipulations. For example, although we shown how to solve
+      the equation $$(x-1)(x-2)=0,$$
+    </p>
+
+    <p style="width:75%">
+      we can hardly expect to be presented with an equation in this form. We are more likely to be confronted with the equation $$x^2 - 3x + 2 = 0.$$
+
+      The factorization $x^2 - 3x + 2 = (x-1)(x-2)$ is really a triple use of
+      <span style="font-weight:bold">P9</span>
+      
+        $$\begin{array}{rcl}
+        (x - 1) \cdot (x-2) &=& x \cdot (x - 2) + (-1) \cdot (x-2) \\ 
+        \ &=& x \cdot x + x \cdot (-2) + (-1) \cdot (x-2) \\ 
+        \ &=& x^2 + x \cdot [(-2) + (-1)] + 2 \\ 
+        \ &=& x^2 -3x +2.\end{array}$$
+    </p>
+      
+    <p style="width:77%; text-indent:15px">
+      A final illustration of the importance of <span style="font-weight:bold">P1&ndash;P9</span> is the fact that this property is actualy used every
+      time one multiplies Arabic numerals. For example the calculation $$\frac{ \ \ \ \ 13 \\ \times 24}{ \ \ \ \ 52} \\ \frac{26}{ \ \ 312}$$
+    </p>
+
+    <p style="width:75%">
+     Is a concise arrangement of the following equations:
+      
+        $$\begin{array}{lcl} 
+        13 \cdot 24 &=& 13 \cdot (2 \cdot 10 + 4) \\ 
+        \ &=& 13 \cdot 2 \cdot 10 + 13 \cdot 4 \\ 
+        \ &=& 26 \cdot 10 + 52.
+        \end{array}$$
+    </p>
+
+    <p style="width:75%;">
+      Note that moving 26 to the left in the above calculation is the same as writing $26 \cdot 10$.)
+      The multiplication $13 \cdot 4 = 52$ uses <span style="font-weight:bold">P9</span> also:
+
+        $$\begin{array}{lcl} 
+        13 \cdot 4 &=& (1 \cdot 10 + 3) \cdot 4 \\ 
+        \ &=& 1 \cdot 10 \cdot 4 + 3 \cdot 4 \\ 
+        \ &=& 4 \cdot 10 + 12 \\
+        \ &=& 4 \cdot 10 + 1 \cdot 10 + 2 \\
+        \ &=& (4 + 1) \cdot 10 + 2 \\
+        \ &=& 5 \cdot 10 + 2 \\
+        \ &=& 52. \\
+        \end{array}$$
+    </p>  
+      
+  </div>
+  </div>
+  </div> 
+
+
+  <div class="item">
+  <div class="slide11"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <p style="width:75%; text-indent:15px">
+      The properties <span style="; margin-top:-10px; font-weight:bold">P1&ndash;P9</span> have descriptive names which are not essential to remember, 
+      but which are often convenient to reference. We will take this opportunity to list properties 
+      <span style="; margin-top:-10px; font-weight:bold">P1&ndash;P9</span> together and indicate the names by which they are commonly designated.
+    </p>
+
+      <br>
+
+      <table style="width:80%">
+        <tr>
+          <td>
+            <p>(P1)</p>
+          </td>
+          <td>
+            <p>(Assciative law for addition)</p>
+          </td>
+          <td>
+            <p>$a+(b+c)=(a+b)+c.$</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>(P2)</p>
+          </td>
+          <td>
+            <p>(Existence of an additive identity)</p>
+          </td>
+          <td>
+            <p>$a+0=0+a=a.$</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>(P3)</p>
+          </td>
+          <td>
+            <p>(Existence of an additive inverse)</p>
+          </td>
+          <td>
+            <p>$a+(-a)=(-a)+a=0.$</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>(P4)</p>
+          </td>
+          <td>
+            <p>(Commutative law for addition)</p>
+          </td>
+          <td>
+            <p>$a+b=b+a.$</p>
+          </td>
+        </tr>
+        <tr>
+          <tr>
+          <td>
+            <p>(P5) <br> &#160</p>
+          </td>
+          <td>
+            <p>(Associative law for multiplica-<br>tion)</p>
+          </td>
+          <td>
+            <p>$a \cdot (b \cdot c)=(a \cdot b) \cdot c.$ <br> &#160</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>(P6) <br> &#160</p>
+          </td>
+          <td>
+            <p>(Existence of a multiplicative <br> identity)</p>
+          </td>
+          <td>
+            <p>$a \cdot 1=1 \cdot a=a; \ \ 1 \neq 0$ <br> &#160</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>(P7) <br> &#160</p>
+          </td>
+          <td>
+            <p>(Existence of multiplicative <br> inverses)</p>
+          </td>
+          <td>
+            <p>$a \cdot a^{-1}=a^{-1} \cdot a=1; \ \ \text{for} \ a \neq 0$ <br> &#160</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>(P4) <br> &#160</p>
+          </td>
+          <td>
+            <p>(Commutative law for multi-<br>cation)</p>
+          </td>
+          <td>
+            <p>$a \cdot b=b \cdot a.$ <br></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>(P4)</p>
+          </td>
+          <td>
+            <p>(Distributive Law)</p>
+          </td>
+          <td>
+            <p>$a \cdot (b+c)=a \cdot b + a \cdot c.$</p>
+          </td>
+        </tr>
+      </table> 
+      
+      <br>
+
+    <p style="width:75%">
+      The three basic properties of numbers which reman to be listed are concerned with inequalities. Although inequalities occur rarely in elementary
+      mathematics, they play apromenent role in calculus. the two notions of inequality $a < b$ ($a$ is less than $b$) and $a > b$ ($a$ is greater than $b$) 
+      are intemetely related: $a < b$ means the same as $b > a$ (thus $1 < 3$ and $3 > 1$ are merely two ways of writing the same assertion). The numbers $a$ satisfying 
+      $a > 0$ are called <span style="font-weight:bold">positive</span>, while those numbers $a$ satisfying $a < 0$ are called <span style="font-weight:bold">negative</span>. 
+      While positivity can thus be defined in terms $<$, it is possible to reverse the precedure: $a < b$ can be defined to mean that $b-a$
+      is positve. In fact it is convenient to consider the collection of all positive numbers , denoted by <i>P</i>, as the basic concept, and state
+      all properties interms of <i>P</i>:
+    </p>
+            
+    <br>
+
+    <table style="width:100%">
+      <tr>
+        <td>
+          <p>(P10) <br> &#160</p>
+        </td>
+        <td>
+          <p>(Trichotomy law) For every number $a$, one and only one of the 
+            <br> following holds:</P>
+        </td> 
+      </tr>
+    </table>
+      
+      <table style="width:75%">
+        <tr>
+          <td>
+            <p>
+              (i)
+            </p>
+          </td>
+          <td>
+            <p>
+              $a=0$.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              (ii)
+            </p>
+          </td>
+          <td>
+            <p>
+              $a$ is in the collection <i>P</i>.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              (iii)
+            </p>
+          </td>
+          <td>
+            <p>
+              $-a$ is in the collection <i>P</i>.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table style="width:100%">
+      <tr>
+        <td>
+          <p>(P11)</p>
+        </td>
+        <td>
+          <p>(Closure under addition) If $a$ and $b$ are in <i>P</i>, then $a+b$
+            are in <i>P</i>.
+          </P>
+        </td> 
+      </tr>
+      <tr>
+        <td>
+          <p>(P12) <br> &#160</p>
+        </td>
+        <td>
+          <p>(Closure under multiplication) If $a$ and $b$ are in <i>P</i>, then $a \cdot b$ is <br> in <i>P</i>.
+          </P>
+        </td> 
+      </tr>
+    </table>
+       
+  </div>
+  </div>
+  </div> 
+
+  <div class="item">
+  <div class="slide12"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <p style="width:75%; text-indent:15px">
+      These three properties should be complimented with the following definitions:
+      
+        $$\begin{array}{rcl}
+        a > b &\text{if}& b-a \ \text{is in} \ P; \\ 
+        a < b &\text{if}& b > a; \\ 
+        a \ge b &\text{if}& a > b \ \text{or} \ a=b;\\
+        a \le b &\text{if}& a < b \ \text{or} \ a=b.^*\\\end{array}$$
+
+      Note, in particular, that $a > 0$ if and only if $a$ is in <i>P</i>.
+    </p>
+
+    <p style="width:75%; text-indent:15px">
+      All the familiar facts about inequalities, however elementary they may seem, are consequences of
+      P10&ndash;P12. For example, if a and be are any two numbers, then precisely one of the follwoing holds:
+
+      <table style="width:75%">
+        <tr>
+          <td>
+            <p>
+              (i)
+            </p>
+          </td>
+          <td>
+            <p>
+              $a-b=0$.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              (ii)
+            </p>
+          </td>
+          <td>
+            <p>
+              $-(a-b)=b-a$ is in the collection <i>P</i>.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              (iii)
+            </p>
+          </td>
+          <td>
+            <p>
+              $-a$ is in the collection <i>P</i>.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </p>
+            
+
+    <p style="width:75%">
+      Using the definitions just made, it follows that precisely one of the following holds:
+
+      <table>
+        <tr>
+          <td>
+            <p>
+              (i) <span style="margin-left:15px">$a=b$</span>, &#160&#160&#160&#160&#160&#160&#160&#160&#160
+            </p>    
+          </td>
+          <td>
+            <p>
+              (ii) <span style="margin-left:15px">$a>b$</span>, &#160&#160&#160&#160&#160&#160&#160&#160&#160
+            </p>
+          </td>
+          <td>
+            <p>(iii) <span style="margin-left:15px">$b>a$</span>.</p>
+          </td>
+        </tr>
+      </table>
+    </p>
+      
+    <p style="width:77%; text-indent:15px">
+      A slightly more interesting fact results from the following manipulations. If $a < b$, so that $b-a$ is in <i>P</i>, then surely $(b+c)-(a+c)$ is in 
+      <i>P</i>; thus, if $a < b$, then $a+c < b+c$. Similarly, suppose $a < b$ and $b < c$. Then
+
+        $$\begin{array}{lcl} 
+        \ & \ & b-a \ \text{is in} \ P \\
+        \ &\text{and}& c-b \ \text{is in} \ P \\
+        \ &\text{so       } \ \ & c-a=(c-b)+(b-a) \ \text{is in} \ P. \\ 
+        \end{array}$$
+    </p>
+
+    <p style="width:75%">
+     This shows that if $a < b$ and $b < c$, then $a < c$. (The two inequalities $a < b$ and $b < c$ are usually written in the abbreviated form $a < b < c,$ which has the 
+     third inequality $a < c$ almost built in.) 
+    </p>
+
+    <p style="width:75%; text-indent:15px">
+      The following assertion is somewhat less obvious: If $a < 0$ and $b < 0,$ then $ab > 0.$ The only difficulty presented by the proof is the unraveling of definitions. 
+      The symbol $a < 0$ means, by definition, $0 > a,$ which means $0-a=-a$ is in <i>P</i>. Similarly $-b$ is in <i>P</i>, and consequently, by P12, $(-a)(-b)=ab$ is in 
+      <i>P</i>. Thus $ab > 0.$
+    </p>
+
+    <p style="width:75%; text-indent:15px">
+      The fact that $ab > 0$ if $a > 0,$ $b > 0$ and also if $a < 0, b < 0$ has one special consequence: $a^2 > 0$ if $a \neq 0$. Thus squares
+      of nonzero numbers are always positive, and in particular we have proved a result which might have seemed sufficiently elementary to be
+      included in our list of properties: $1 > 0$ (since $1 = 1^2$).
+
+      <br>
+      <br>
+
+    <p style="width:75%; font-size:14px">
+      *There is one slightly perplexing feature of the symbols ≥ and ≤. The statements $$\begin{array}{rcl}1+1 &\leq& 3 \\ 1+1 &\leq& 2\end{array}$$
+
+      are both true even though we know that ≤ coould be replaced by < in the first, and by = in the second. This sort of thing is bound to occur when
+      ≤ is use with certain numbers. The usefulness of the symbol is revealed by a statement like Theorem 1&mdash;here equality holds for some values of
+      <i>a</i> and <i>b</i> while inequality holds for
+      others values.
+    </p>
+  </div>
+  </div>
+  </div>
+
+  <div class="item">
+  <div class="slide13"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <p style="width:75%; text-indent:15px">
+      The fact that $-a > 0$ if $a < 0$ is the basis of a concept which will play an extremely important role in this book. For any number $a,$ we define the 
+      <span style="font-weight: bold">absolute value</span> $|a|$ of $a$ as follows: $$|a| = \begin{cases} a, & a \geq 0 \\ -a, & a \leq 0.\end{cases}$$
+    </p>
+
+    <p style="width:75%">
+      Note that $|a|$</span> is always positive, except when $a=0$. For example, we have $|-3|=3, |7|=7, |1+\sqrt{2}-\sqrt{3}|=1+\sqrt{2}-\sqrt{3},$
+      and $|1+\sqrt{2}-\sqrt{10}|=$ $1+\sqrt{2}-\sqrt{10}.$ In general, the most straightforward approach to any problem involving absolute values requires treating several cases seperately, since absoute values are 
+      defined by cases to begin with. This approach may be used to prove the following very important fact about absolute values.  
+
+      <p style="width:75%">
+        <span style="font-weight:bold; padding-right:25px">Theorem 1</span> For all numbers $a$ and $b$, we have $$ \ \ \ \ \ |a+b| \leq |a| + |b|.$$
+    </p>
+          
+    <p style="width:75%">
+      <span style="padding-right: 30px; font-size:14px">PROOF:</span> We will consider four cases:
+        
+        $$\begin{array}{lcl} 
+        &(1)& & a \geq 0, & b \geq 0; \\
+        &(2)& & a \geq 0, & b \leq 0; \\
+        &(3)& & a \leq 0, & b \geq 0; \\
+        &(4)& & a \leq 0, & b \leq 0. \\
+        \end{array}$$
+    </p>
+      
+    <p style="width:75%">
+      In case (1) we also have $a+b \geq 0$, and the theorem is obvious; in fact, $$ \ \ \ \ \ \ |a+b| = a+b = |a|+|b|,$$ so that in this case, equality holds.
+    </p>
+
+     <p style="width:75%">
+      In case (4) we have $a+b \leq 0$, and again equality holds: $$ \ \ \ \ \ \ \ \ |a+b| = -(a+b) = -a+(-b) = |a|+|b|.$$
+    </p>
+
+    <p style="width:75%">
+      In case (2) when $a \geq 0$ and $b \leq 0$, we must prove that $$ \ \ \ \ \ \ |a+b| \leq a-b.$$ This case may therefore be devided into two subcases. If 
+      $a+b \geq 0,$ then we must prove that $$ \ \ \ \ a+b \leq a-b, \ \ \text{i.e., } \ -a \leq a$$
+    </p>
+
+    <p style="width:75%">
+      wich is certainly true since $b \leq 0$ and hence $-b \geq 0.$ On the other hand, if $a+b \leq 0,$ we must prove that
+      $$ \ \ \ \ -a-b \leq a-b, \ \ \text{i.e., } \ -a \leq a$$ which is certainly true since $a \geq 0$ and hence $-a \leq 0.$
+    </p>
+
+
+    <p style="width:75%">
+      Finally, note that case (3) three may be disposed of with no additional work, by applying case(2) with $a$ and $a \geq b$ interchanged. &#9724;
+    </p>
+  </div>
+  </div>
+  </div>
+
+  <div class="item">
+  <div class="slide14"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <p style="width:75%; text-indent:15px">
+      Although this method of treating absolute values (seperate consideration of various cases) is sometimes the only approach available, there are 
+      often simpler methods which may be used. In fact, it is possble to give a much shorter proof of Theorem 1; this proof is motivated by the 
+      observation that $$|a|=\sqrt{a^2}.$$
+    </p>
+
+    <p style="width:75%">
+      (Here and throughout the book, $\sqrt{x}$ denotes the postive square root of $x;$ this symbol is defined only when $x \geq 0.$) We may now observe that
+
+        $$\begin{array}{rcl}
+        (|a+b|)^2 = (a+b)^2 &=& a^2 + 2ab + b^2 \\ 
+        & \leq & a^2 + 2|a| \cdot |b| + b^2 \\ 
+        &=& |a|^2 + 2|a| \cdot |b| + |b|^2 \\
+        &=& (|a| + |b|)^2.\end{array}$$
+    </p>
+
+    <p style="width:75%">
+      From this we can conclude that $|a+b| \leq |a|+|b|$ because $x^2 < y^2$ implies $x < y,$ provided that $x$ and $y$ are both nonnegative; a proof of <i>this</i> fact 
+      is left to the reader (Problem 5).
+    </p>
+
+    <p style="width:75%; text-indent:15px">
+      One final observation may be made about the theorem we just proved: a close examination of either proof offered shows that $$|a+b| = |a| + |b|$$ if $a$ and $b$ have 
+      the same sign (i.e., are both positive or both negative), or if one of the two is zero, while $$|a+b| = |a| < |b|$$ if $a$ and $b$ are of opposite signs.
+    </p>
+      
+    <p style="width:77%; text-indent:15px">
+      We will conclude this chapter with a subtle point, neglected until now, whose inclusion is required in a conscientious survey of the properties
+      of numbers. After stating property P9, we proved that $a-b=b-a$ implies $a=b.$ The proof began by establshing that $$a \cdot (1+1) = b \cdot(1+1),$$
+
+      from which we concluded that $a=b.$ This result is obtained from the equation $a \cdot (1+1) = b \cdot(1+1)$ by deviding both sides by $1+1.$ Division by zero should
+      be avoided scrupulously, and it must therefore be admitted that the validity of the argument depends on knowing that $1+1 \neq 0.$ Problem 25 is 
+      deigned to convince you that this fact cannot possibly be proved from properties P1&ndash;P9 alone! Once P10, P11, and P12 are available, however, the
+      proof is very simple: we have already seen that $1>0;$ it fallows that $1+1>0,$ and in particular $1+1 \neq 0.$
+    </p>
+
+    <p style="width:75%; text-indent:15px">
+     This last demonstration has perhaps only strengthened your feeling that it is absurd to bother proving such obvious facts, but an honest assessment
+     of our present situation will helpjustify serious consideration of such details. In this chapter we have assumed that numbers are familiar objects,
+     and that P1&ndash;P12 are merely explicit statements of obvious, well&ndash;known propeties of numbers. It would be difficult, however, to justify
+     this  assumption. Although one learns how to "work with" numbers in school, just what numbers are remains rather vague. A great deal of this book
+     is devoted to elucidating the concept of numbers, and by the end
+    </p>  
+  </div>
+  </div>
+  </div>
+
+
+  <div class="item">
+  <div class="slide15"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <p style="width:75%">
+      of the book, we will have become quite well aquainted with them. But it will be necessary to work with numbers throughout the book. It is therefore
+      reasonable to admit frankly that we do not yet thoroughly understand numbers; we may still say that, in whatever way numbers are finally defined,
+      they should certainly have properties P1&ndash;P12.
+    </p>
+
+    <p style="width:75%; text-indent: 15px">
+      Most of this chapter has been an attempt to present convincing evidence that P1&ndash;P12 are indeed basic properties which we should assume in
+      order to deduce other familiar properties of numbers. Some of the pfoblems (which indicate the derivation of other facts about numbers from
+      P1&ndash;P12) are offered as further evidence. It is still a crucial question whether P1&ndash;P12 actually account for <i>all</i> properties of 
+      numbers. As a matter of fact, we shall soon see that they do <i>not</i>. In the next chapter, the deficiencies of properties P1&ndash;P12 will 
+      become quite clear, but the proper means for correcting these deficiencies is not easily discovered. The crucial additional basic property of 
+      numbers which we are seeking is profound and subtle, quite unlike P1&ndash;P12. The discovery of this crucial property will require all the 
+      work of Part II of this book. In the remainder of Part I we will begin to see why some additional property is required; in order to investigate
+      this, we will have to consider a little more carefully what we mean by "numbers."
+    </p>
+
+    <br>
+    <br>
+
+    <p style="width:75%">PPROBLEMS</p>
+
+    <p style="width:75%; text-indent:10px"><a href="http://localhost:8888/Problem_Sets/spivakslides.php">1.</a> <span style="padding-left:15px">Prove the following:</span></p>
+
+    <table style="width:75%; margin-left: 40px">
+      <tr>
+        <td><p>(i) <br> (ii) <br> (iii) <br> (iv) <br> (v) <br> (vi) <br> &#160 <br> &#160 </p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If $ax=a$ for some number $a \neq 0,$ then $x=1.$
+            <br>
+            <span style="padding-left:15px">$x^2-y^2 = (x-y)(x+y).$</span>
+            <br>
+            <span style="padding-left:15px">If $x^2=y^2,$ then $x=y$ or $x=-y.$
+            <br>
+            <span style="padding-left:15px">$x^3-y^3 = (x-y)(x^2 + xy + y^2).$
+            <br>
+            <span style="padding-left:15px">$x^n-y^n = (x-y)(x^{n-1} + x^{n-2}y + \dots + xy^{n-2} + y^{n-1}).$
+            <br>
+            <span style="padding-left:15px"></span>$x^3 + y^3 = (x+y)(x^2 - xy + y^2).$ (There is a 
+            particularly easy way to do <span style="padding-left:15px"> this, using (iv), and it will show you how to find a factorization for $x^n + y^n$ 
+            <span style="padding-left:15px"> whenever $n$ is odd.)
+          </p>
+        </td>
+      </tr>
+    </table>
+    </p>
+
+    <p style="width:75%; text-indent:10px"><a href="http://localhost:8888/Problem_Sets/spivakslides.php">2.</a> <span style="padding-left:15px">What is wrong with the following proof? Let
+      $x=y.$ Then</span>
+    </p>
+
+    <p style="width:75%; text-indent:10px">
+        $$\begin{array}{rcl}
+        x^2 &=& xy, \\
+        x^2 - y^2 &=& xy - y^2, \\
+        (x+y)(x-y) &=& y(x-y), \\
+        x+y &=& y, \\
+        2y &=& y, \\
+        2 &=& 1.\end{array}$$
+    </p>
+      
+    <p style="width:75%; text-indent:10px"><a href="http://localhost:8888/Problem_Sets/spivakslides.php">3.</a> <span style="padding-left:15px">Prove the following:</span>
+
+      <table style="width:75%; margin-left: 40px">
+      <tr>
+        <td>
+          <p>
+            (i) <span style="padding-left:15px">$\frac{\Large a}{\Large b} = \frac{\Large ac}{\Large bc}$, if $b,c \neq 0.$
+            <br>
+            <br>
+            (ii) <span style="padding-left:15px">$\frac{\Large a}{\Large b} + \frac{\Large c}{\Large d} = \frac{\Large ad+bc}{\Large bd}$, &#160 if $b,d \neq 0.$
+            <br>
+            <br>
+          </p>
+        </td>
+      </tr>
+    </table>
+    </p> 
+  </div>
+  </div>
+  </div>
+
+
+<div class="item">
+  <div class="slide16"></div>
+  <div class="carousel-caption" style="text-align:left">
+  <div class="carousel-inner" style="text-align:justify; margin-left:90px">
+    
+    <table style="width:75%; margin-left: 40px">
+      <tr>
+        <td style="vertical-align:top"><p>(iii)</p></td>
+        <td style="vertical-align:top">
+          <p>
+            <span style="padding-left:15px">$(ab)^{-1}=a^{-1}b^{-1},$</span> if $a,b \neq 0$</span> (To do this you must remember the defining 
+            <span style="padding-left:15px">property</span> of $(ab)^{-1}$.)
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(iv)</p></td>
+        <td>
+          <div>
+            <p>
+              <span style="padding-left:15px">$\displaystyle\frac{a}{b} \ \cdot \frac{c}{d} \ = \frac{ac}{db} \ ,$</span> &#160 if &#160
+              $b,d \neq 0.$
+            </p>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align:top; padding-top:6px"><p>(v)</p></td>
+        <td style="vertical-align:top">
+            <p>
+              <span style="padding-left:15px">$\displaystyle\frac{a}{b} {\LARGE/} \frac{c}{d} \ = \frac{ad}{bc} \ ,$</span> &#160 if &#160
+              $b,c,d \neq 0.$
+            </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align:top; padding-top:3px"><p>(vi)</p></td>
+        <td style="vertical-align:top">
+          <p>
+            <span style="padding-left:15px">If</span> $b,d \neq 0$, then $\displaystyle\frac{a}{b} \ = \frac{c}{d}$ if and only if $ad = bc.$
+            Also determine
+              <p style="padding-left:15px">
+                when $ \ \displaystyle\frac{a}{b} = \frac{b}{a}$.
+              </p>
+          </p>
+        </td>
+      </tr>
+    </table>
+    </p>
+
+    <p style="width:75%; text-indent:10px">4. <span style="padding-left:15px">Find all numbers $x$ for which</span></p>
+
+    <table style="width:75%; margin-left: 40px">
+      <tr>
+        <td><p>(i)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$4-x < 3-2x.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(ii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$5-x^2 < 8.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(iii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$5-x^2 < -2.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(iv)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$(x-1)(x-3) > 0.$</span> (When is a product of two numbers positive?)
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(v)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$x^2-2x+2 > 0.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(vi)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$x^2+x+1 > 2.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(vii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$x^2-x+10 > 16.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(viii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$x^2+x+1 > 0.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(ix)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$(x-\pi)(x+5)(x-3) > 0.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(x)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$(x-\sqrt[3]{2})(x-\sqrt{2}) > 0.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(xi)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$2^x < 8.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(xii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">$x+3^x < 4.$</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(xiii)</p></td>
+        <td>
+            <div style="padding-left:15px; margin-top:0px">
+              <p>
+                $\displaystyle\frac{1}{x} \ + \frac{1}{1-x} > 0.$ 
+              </p>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(xiv)</p></td>
+        <td>
+            <div style="padding-left:15px;">
+              <p>
+                $\displaystyle\frac{x-1}{x+1} > 0$ 
+              </p>
+            </div>
+        </td>
+      </tr>
+    </table>
+    <br>
+      
+    <p style="width:75%; text-indent:10px">5. <span style="padding-left:15px">Prove the following:</span>
+
+      <table style="width:75%; margin-left: 40px">
+      <tr>
+        <td><p>(i)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $a < b$ and >$c < d,$ then $a+c < b+d.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(ii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $a < b,$ then
+            $-b < -a.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(iii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $a < b$ and $c > d,$ then $a-c < b-d.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(iv)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $a < b$ and $c > 0,$ then $ac < bd.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(v)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $a < b$ and $c < 0,$ then $ac > bd.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(vi)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $a > 1,$ then $a^2 > a.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(vii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $0 < a < 1,$ then $a^2 < a.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(viii)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $0 \leq a < b,$ and $0 \leq c < d,$ then $ac < bd.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(ix)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $0 \leq a < b,$ then $a^2 \leq b^2.$ (Use (iii).)
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(x)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">If</span> $a, b \geq 0$ and 
+            $a^2 < b^2,$ then $a < b.$ (Use (ix), backwards.)
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <p style="width:75%; text-indent:10px">6.
+      <span style="padding-left:15px">(a)</span> <span style="padding-left:15px">Prove that if</span> $0 \leq x < y,$ then $x^n < y^n,$ $n=1, 2, 3, \dots$
+    </p>
+
+    <table style="width:75%; margin-left: 40px">
+      <tr>
+        <td><p>(b)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">Prove that if</span> $x < y$ and $n$ is odd, then $x^n < y^n.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(c)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">Prove that if</span> $x^n = y^n$ and $n$</span> is odd, then $x=y.$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>(d)</p></td>
+        <td>
+          <p>
+            <span style="padding-left:15px">Prove that if</span> $x^n = y^n,$ and $n$ is even, then $x=y$ or $x=-y.$
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    </p> 
+  </div>
+  </div>
+  </div>
+
+<div class="item">
+<div class="slide17"></div>
+<div class="carousel-caption" style="text-align:left">
+<div class="carousel-inner" style="text-align:justify; margin-left:100px">
+  <table style="width:75%">
+    <tr>
+      <td style="vertical-align:top; padding-left:5px"><p>7.</p></td>
+      <td>
+        <p style="padding-left:20px">Prove that if $0 < a < b$, then $$a < \sqrt{ab} < \frac{a+b}{2} < b.$$</p>
+      </td>
+    </tr>
+      <tr>
+        <td style="vertical-align:top"><p>&#160</p></td>
+        <td>
+          <p style="padding-left:20px">
+            Notice that the inequality $\sqrt{ab} \leq (a+b)/2 \ $ holds for all $a,b \geq 0.$ A gener-alization of this fact occurs in Problem 2-22.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+  <table style="width:75%">
+      <tr>
+        <td style="vertical-align:top"><p>*8.</p></td>
+        <td>
+          <p style="padding-left:15px">
+            Although the basic properties of inequalities were stated in terms of the collection <i>P</i> of all positive numbers, and less then was defined in terms of
+            <i>P</i>, this procedure can be reversed. Suppose that P10&ndash;P12 are replaced by
+          </p>
+            <table>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(P'10)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>For any numbers $a$ and $b$ one, and only one, of the <br> following holds:</p>
+                  <table>
+                    <tr>
+                      <div style="margin-top:-10px">
+                      <td><p>(i)</p></td>
+                      <td style="padding-left:15px"><p>$ \ \ a=b,$</p></td>
+                      </div>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <div style="margin-top:-10px">
+                      <td><p>(ii)</p></td>
+                      <td style="padding-left:15px"><p>$ \ a < b,$</p></td>
+                      </div>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <div style="margin-top:-10px">
+                      <td><p>(iii)</p></td>
+                      <td style="padding-left:15px"><p>$a < b,$</p></td>
+                      </div>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(P'11)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>For any numbers $a,b$ and $c$, if $a < b$ and $b < c$, then <br> $a < c$.</p>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(P'12)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>For any numbers $a,b$ and $c$, if $a < b$, then <br> $a+c < b+c$.</p>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(P'12)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>For any numbers $a,b$ and $c$, if $a < b$, and $0 < c$, then <br> $ac < bc$.</p>
+                </td>
+              </tr>
+            </table>
+
+            <p style="padding-left:15px">Show that P10&ndash;P12 can then be decuced as theorems.</p>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width:75%">
+      <tr>
+        <td style="vertical-align:top; padding-left:8px"><p>9.</p></td>
+        <td>
+          <p style="padding-left:15px">
+            Express each of the following  with at least one less pair of absolute value signs.
+          </p>
+            <table>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(i)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|\sqrt{2} + \sqrt{3} - \sqrt{5} + \sqrt{7}|.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(ii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|(|a+b| - |a| - |b|)|.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(iii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|(|a+b| + |c| - |a+b+c|)|.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(iv)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x^2 - 2xy + y^2|.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(v)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|(|\sqrt{2} + \sqrt{3}| - |\sqrt{5} + \sqrt{7}|)|.$</p>
+                </td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+
+  <table style="width:75%">
+      <tr>
+        <td style="vertical-align:top"><p>10.</p></td>
+        <td>
+          <p style="padding-left:15px">
+            Express each of the following  without absolute value signs, treating various cases seperately when necessary.
+          </p>
+            <table>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(i)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|a + b| - |b|.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(ii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|(|x| - 1)|.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(iii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x| - |x^2|.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(iv)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$a - |(a - |a|)|.$</p>
+                </td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+
+  <table>
+      <tr>
+        <td style="vertical-align:top"><p>11.</p></td>
+        <td>
+          <p style="padding-left: 15px">
+            Find all numbers $x$ for which
+          </p>
+            <table>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(i)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x-3|=8.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(ii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x-3| < 8.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(iii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x+4| < 2.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(iv)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x-1| + |x-2| > 1.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(v)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x-1| + |x+1| < 2.$</p>
+                </td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="slide18"></div>
+<div class="carousel-caption" style="text-align:left">
+<div class="carousel-inner" style="text-align:justify; margin-left:100px">
+  <table style="margin-left:28px">
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(vi)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>$|x-1| + |x+1| < 1.$</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(vii)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>$|x-1| \cdot |x+1| = 0.$</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(viii)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>$|x-1| \cdot |x+2| = 3.$</p>
+      </td>
+    </tr>
+  </table>
+
+  <table style="width:80%">
+      <tr>
+        <td style="vertical-align:top; padding-left:8px"><p>12.</p></td>
+        <td>
+          <p style="padding-left:15px">
+            Prove the following:</p>
+            <table>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(i)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|xy| = |x| \cdot |y|.$</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(ii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <div style="margin-top:-27px">
+                    <p><span style="font-size:45px">$\lvert\frac{1}{x} \ \rvert$</span> $=$ <span style="font-size:45px">$\frac{1}{|x|} \ $</span>, if $x \neq 0$. (The best way to do this is to remember what
+                    $|x|^{-1}$ is.)
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px"><p>(iii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <div style="margin-top:-20px">
+                    <p><span style="font-size:45px">$\frac{|x|}{|y|}$</span> $\ =$ <span style="font-size:45px">$\lvert \frac{x}{y} \ \rvert$</span>, if $y \neq 0.$</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(iv)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x - y| \leq |x| + |y|.$ (Give a very short proof.)</p>
+                </td>
+              </tr>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(v)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x| - |y| \leq |x  -  y|.$ (A very short proof is possible if you write things in the right way.)</p>
+                </td>
+              </tr>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(vi)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|(|x| - |y|)| \leq |x - y|.$ (Why does this follow immediately from (v)?)</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left:15px; vertical-align:top"><p>(vii)</p></td>
+                <td style="padding-left:15px; vertical-align:top">
+                  <p>$|x+y+z| \leq |x| + |y| + |z|.$ Indicate when equality holds, and prove your statement.</p>
+                </td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width:75%">
+      <tr>
+        <td style="vertical-align:top; padding-left:8px"><p>13.</p></td>
+        <td>
+          <p style="padding-left:15px">
+            The maximum of two numbers $x$ and $y$ is denoted by $\text{max}(x, y)$. Thus $\text{max}(-1,3) = \text{max}(3,3) = 3$, and 
+            $\text{max}(-1,-4) = \text{max}(-4,-1) = -1$. The minumum of $x$ and $y$ is denoted by $\text{min}(x,y)$. The prove that.
+            $$\begin{eqnarray}\text{max} &=& \frac{x+y+|y-x|}{2} \ , \\ \text{max} &=& \frac{x+y-|y-x|}{2} \ .\end{eqnarray}$$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align:top"><p>&#160</p></td>
+        <td>
+          <p style="padding-left:18px">
+            Derive a formula for $\text{max}(x,y,z)$ and $\text{min}(x,y,z)$, using, for example $$\text{max}(x,y,z) = \text{max}(x, \text{max}(y,z)).$$
+          </p>
+        </td>
+      </tr>
+    </table>
+
+  <table style="width:80%">
+      <tr>
+        <td style="vertical-align:top; padding-left:8px"><p>14.</p></td>
+        <td>
+          <table>
+            <tr>
+              <td style="vertical-align:top; padding-left:15px"><p>(a)</p></td>
+              <td style="vertical-align:top; padding-left:15px">
+                <p>
+                  Prove that $|a|=|-a|.$ (The trick is not to become confused by too many cases. First prove the statement for $a \geq 0$. Why is it then obvious for $a \leq 0$?)
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td style="padding-left:15px; vertical-align:top"><p>(b)</p></td>
+              <td style="padding-left:15px; vertical-align:top">
+                <p>Prove that $-b \leq a \leq b$ if and only id $|a| \leq b.$ In particular, it follows that $-|a| \leq a \leq |a|.$</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left:15px; vertical-align:top"><p>(c)</p></td>
+              <td style="padding-left:15px; vertical-align:top">
+                <p>Use this fact to give a new proof that $|a+b| \leq |a|+|b|.$</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  <table style="width:65%">
+      <tr>
+        <td style="vertical-align:top"><p>*15.</p></td>
+        <td>
+          <p style="padding-left: 0px">
+            Prove that if $x$ and $y$ are not both $0$, then $$x^2+xy+y^2 >0, \\ x^4+x^3y+x^2y^2+xy^3+y^4 >0.$$
+          </p>
+        </td>
+      </tr>
+        <td style="vertical-align:top"><p>&#160</p></td>
+        <td>
+          <p style="padding-left:18px">
+            Hint: Use Problem 1.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width:75%">
+      <tr>
+        <td style="vertical-align:top"><p>*16.</p></td>
+        <td>
+          <table>
+            <tr>
+              <td style="vertical-align:top; padding-left:15px"><p>(a)</p></td>
+              <td style="vertical-align:top; padding-left:15px">
+                <p>
+                  Show that
+                  <table>
+                    <tr>
+                      <td>
+                        <p>
+                          $(x+y)^2 = x^2+y^2$ &#160&#160 only when $x=0$ or $y=0$,
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>
+                          $(x+y)^3 = x^3+y^3$ &#160&#160 only when $x=0$ or $y=0$ or $x=-y.$
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="slide19"></div>
+<div class="carousel-caption" style="text-align:left">
+<div class="carousel-inner" style="text-align:justify; margin-left:100px">
+  <table style="margin-left:20px; width:65%">
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(b)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>Using the fact that $$x^2+2xy+y^2 = (x+y)^2 \geq 0,$$</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top"><p>&#160</p></td>
+      <td>
+        <p style="padding-left:15px">
+          show that $4x^2+6xy+4y^2 >0$ unless $x$ and $y$ are both $0$.
+        </p>
+      </td>
+    </tr>
+  </table>
+  <table style="margin-left:20px; width:80%">
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(c)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>Use part (b) to find out when $(x+y)^4 = x^4+y^4.$</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(d)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          Find out when $(x+y)^5 = x^5+y^5.$ Hint: From the assumption $(x+y)^5 =$ $x^5+y^5$ you should be able to derive the equation $x^3+2x^2y+y^3 =0$ if $x,y \neq 0.$
+          This implies that $(x+y)^3=x^2y+xy^2=xy(x+y).$
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top"><p>&#160</p></td>
+      <td>
+        <p style="padding-left:15px">
+          You should now be able to make a good guess as to when $(x+y)^n = x^n+y^n;$ the proof is contained in Problem 11&ndash;63.
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <table style="width:75%">
+      <tr>
+        <td style="vertical-align:top"><p>17.</p></td>
+        <td>
+          <table>
+            <tr>
+              <td style="vertical-align:top; padding-left:15px"><p>(a)</p></td>
+              <td style="vertical-align:top">
+                <p style="padding-left:15px">Find the smalles possible value of $2x^2-3x+4$. Hint: "Complete the square," i.e., write $2x^2-3x+4 = 2(x-3/4)^2+$ ?</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top; padding-left:15px"><p>(b)</p></td>
+              <td style="vertical-align:top">
+                <p style="padding-left:15px">Find the smalles possible value of $x^2-3x+2y^2+4y+2$.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top; padding-left:15px"><p>(c)</p></td>
+              <td style="vertical-align:top">
+                <p style="padding-left:15px">Find the smalles possible value of $x^2-4xy+5y^2-4x-6y+7$.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  <table style="width:80%">
+      <tr>
+        <td style="vertical-align:top"><p>18.</p></td>
+        <td>
+          <table>
+            <tr>
+              <td style="vertical-align:top; padding-left:15px"><p>(a)</p></td>
+              <td style="vertical-align:top; padding-left:15px">
+                <p>
+                  Suppose that $b^2-4c \geq 0.$ Show that the numbers
+                  $$ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \frac{-b+\sqrt{b^2-4c}}{2} \ , \ \ \ \ \ \ \ \frac{-b-\sqrt{b^2-4c}}{2}$$
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top"><p>&#160</p></td>
+              <td>
+                <p style="padding-left:15px">
+                  both satisfy the equation $x^2+bx+c=0$.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td style="padding-left:15px; vertical-align:top"><p>(b)</p></td>
+              <td style="padding-left:15px; vertical-align:top">
+                <p>Suppose that $b^2-4c < 0.$ Show that there are no numbers $x$ satisfying $x^2+bx+c=0;$ in fact $x^2+bx+c > 0;$ for all $x.$ Hint: Complete the square.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left:15px; vertical-align:top"><p>(c)</p></td>
+              <td style="padding-left:15px; vertical-align:top">
+                <p>Use this fact to give another proof that if $x$ and $y$ are not both $0$, then $x^2+xy+y^2 > 0.$</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left:15px; vertical-align:top"><p>(d)</p></td>
+              <td style="padding-left:15px; vertical-align:top">
+                <p>For which numbers $\alpha$ is it true that $x^2 + \alpha xy + y^2 > 0$ whenever $x$ and $y$ are not both $0$?</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left:15px; vertical-align:top"><p>(e)</p></td>
+              <td style="padding-left:15px; vertical-align:top">
+                <p>Find the smallest possible value of $x^2+xy+c$ and of $ax^2+by+c$ for $a > 0.$</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  <table style="width:80%">
+      <tr>
+        <td style="vertical-align:top"><p>19.</p></td>
+        <td>
+          <p style="padding-left: 15px">
+            The fact that $a^2 \geq$ for all numbers $a$, elementary as it may seem, is nevertheless the fundamental idea upon which most important inequalites are 
+            ultimately based. The great&ndash;granddaddy of all inequalities is the <i>Schwarz inequality</i>. $$x_1y_1+x_2y_2 \leq \sqrt{x_1^2 + x_1^2}\sqrt{y_1^2 + y_1^2}.$$
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align:top"><p>&#160</p></td>
+        <td>
+          <p style="padding-left:18px">
+            (A more general form occurs in Problem 2&ndash;21.) The three proofs of the Schwarz inequality outlined below have only one thing in common&mdash;their reliance 
+            on the fact that $a^2 \geq 0$ for all $a$.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width:80%">
+      <tr>
+        <td style="vertical-align:top; padding-left:15px"><p>&#160</p></td>
+        <td>
+          <table>
+            <tr>
+              <td style="vertical-align:top; padding-left:15px"><p>(a)</p></td>
+              <td style="vertical-align:top; padding-left:15px">
+                <p>
+                 Prove that if $x_1=\lambda y_1$ and $x_2=\lambda y_2$ for some number $\lambda \geq 0,$ then equality holds in the Schwarz inequality. Prove the same thing
+                 if $y_1=y_2=0.$ Now suppose that $y_1$ and $y_2$ are not both $0,$ and that there is no
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="slide20"></div>
+<div class="carousel-caption" style="text-align:left">
+<div class="carousel-inner" style="text-align:justify; margin-left:100px">
+  <table style="margin-left:34px; width:65%">
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>&#160</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          number $\lambda$ such that $x_1=\lambda y_1$ and $x_2= \lambda y_2.$ Then 
+          $$\begin{eqnarray}0 & < & (\lambda y_1 - x_1)^2 + (\lambda y_2 - x_2)^2 \\ &=&\lambda^2(y_1^2 + y_2^2) - 2\lambda (x_1y_1 + x_2y_2)+(x_1^2+x_2^2).\end{eqnarray}$$</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top"><p>&#160</p></td>
+      <td>
+        <p style="padding-left:15px">
+          Using Problem 18, complete the proof of the Schwarz inequality.
+        </p>
+      </td>
+    </tr>
+  </table>
+  <table style="margin-left:20px; width:80%">
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(b)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>Prove the Schwarz inequality by using $2xy \leq x^2+y^2$ (how is this derived?) with</p>
+          <div style="margin-top:-15px; margin-left:-90px">
+            <p>
+              $$x = \frac{x_i}{\sqrt{x_1^2 + x_2^2}} \ , \ \ \ \ \ \ \ \ y = \frac{y_i}{\sqrt{y_1^2 + y_2^2}} \ ,$$
+            </p>
+          </div>
+      </td>
+    </tr>
+    <tr>
+        <td style="vertical-align:top"><p>&#160</p></td>
+        <td>
+          <p style="padding-left:15px">
+            first for $i=1$, and then for $i=2.$
+          </p>
+        </td>
+      </tr>
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(c)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          Prove the Schwarz inequality by first proving that
+        </p>
+        <div style="margin-left:-95px">
+          <p>
+            $$(x_1^2 + x_2^2)(y_1^2 + y_2^2) = (x_1y_1 + x_2y_2)^2 + (x_1y_2 - x_2y_1)^2.$$
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(b)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          Deduce, from each of these froofs, that equality holds only when $y_1=y_2=0$ or when there is a number 
+          $\lambda \geq 0$ such that $x_1=\lambda y_1$ and $x_2=\lambda y_2.$
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <table style="width:83%">
+      <tr>
+        <td style="vertical-align:top; text-indent:15px">
+          <p>
+            In our later work, three facts about inequalities will be crucial. Although proofs will be supplied at the appropriate point in the text, a personal assault
+            on these problems is infinitely more enlightening than a perusal of a completely worked-out proof. The statements of these propositions involve some weird 
+            numbers, but their basic message is simple: if $x$ is close enough to $x_0,$ and $y$ is close enough to $y_0,$ then $x+y$ will be close to $x_0+y_0,$ and $xy$
+            will be close to $x_0y_0,$ and $1/y$ will be close to $1/y.$ The symbol "<i>&epsilon;</i>" which appears in these propositions is the fifth letter of the Greek 
+            alphabet ("epsilon"), snd could just as well be replaced by a less intimidating Roman letter; however, tradition has made the use of <i>&epsilon;</i> sacrosanct 
+            in thecontexts to which these theorems apply.
+          </p></td>
+      </tr>
+    </table>
+
+  <table style="width:65%; margin-left:5px">
+      <tr>
+        <td style="vertical-align:top"><p>20.</p></td>
+        <td style="vertical-align:top; padding-left:15px">
+          <p>
+            Prove that if
+            $$\vert x-x_0 \rvert < \frac{\varepsilon}{2} \ \ \ \ \text{and} \ \ \ \ \lvert y-y_0 \rvert < \frac{\varepsilon}{2}$$
+            then 
+            $$\lvert (x+y) - (x_0+y_0) \rvert < \varepsilon, \\ \lvert (x-y) - (x_0-y_0) \rvert < \varepsilon.$$
+          </p>
+        </td>
+      </tr>
+    </table>
+
+  <table style="width:80%">
+      <tr>
+        <td style="vertical-align:top"><p>*21.</p></td>
+        <td>
+          <p style="padding-left: 15px">
+            Prove that if
+            $$\lvert x-x_0 \rvert < \text{min} \bigg(\frac{\varepsilon}{2(\lvert y_0 \rvert +1)} \ , 1 \bigg) \ \ \ \ \text{and} \ \ \ \ \lvert y-y_0 \rvert < \frac{\varepsilon}{2(\lvert x_0 \rvert +1)} \ ,$$
+            then $\lvert xy-x_0y_0 \rvert < \varepsilon.$
+            <br>
+            The notation "min" was defined in Problem 13, but the formula provided by that problem is irrelevent at the moment; the first inequality in the hypothesis just 
+            means that
+            $$\vert x-x_0 \rvert < \frac{\varepsilon}{2(\lvert y_0 \rvert} \ \ \ \ \text{and} \ \ \ \ \lvert x-x_0 \rvert < 1;$$
+          </p>
+        </td>
+      </tr>
+    </table>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="slide21"></div>
+<div class="carousel-caption" style="text-align:left">
+<div class="carousel-inner" style="text-align:justify; margin-left:100px">
+  <table style="margin-left:25px; width:75%">
+    <tr>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          at one point in the argunment you will need the first inequality, and at another point you will need the second. One more word of advice: since the hypotheses
+          only proviide information about $x-x_0$ and $y-y_0,$ it is almost a foregone conclusion that the proof will depend upon writing $xy-x_0y_0$ in a way that 
+          involves $y-y_0.$)
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <table style="margin-left:0px; width:77%">
+    <tr>
+      <td style="vertical-align:top"><p>*22</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          Prove that if $y_0 \neq 0$ and
+          $$\lvert y-y_0 \rvert < \text{min} \bigg( \frac{\lvert y_0 \rvert}{2} \ , \frac{\varepsilon \lvert y_0 \rvert ^2}{2} \ \bigg) ,$$
+          then $y \neq 0$ and
+          $${\huge\lvert} \frac{1}{y} \ - \frac{1}{y_0} \ {\huge\rvert} < \varepsilon.$$
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top"><p>*23</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          Replace the question marks in the following statement by expressions involvi&ndash;<br>ng $\varepsilon, \ x_0$ and $y_0$ so that the conclusion will be true:
+          $$\lvert y-y_0 \rvert < \ ? \ \ \ \ \text{and} \ \ \ \ \lvert x-x_0 \rvert < \ ?$$
+          then $y \neq 0$ and
+          $${\huge\lvert} \frac{x}{y} \ - \frac{x_0}{y_0} \ {\huge\rvert} < \varepsilon.$$
+
+          This problem is trivial in the sense that its solution follows from Problem 21 and 22 with almost no work at all (notice that $x/y=x \cdot 1/y.$) The crucial 
+          point is not to become confused; decide which of the two problems should be used first, and don't panic if your answer looks unlikely. 
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top"><p>*24</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          This problem shows that the actual placement of parentheses is a sum is irrelevent. The proofs involve "mathematical induction"; if you are not fam- iliar with 
+          such proofs, but still want to tackle this problem, it can be saved until after Chapter 2, where proofs by induction are explained.
+          <br>
+          <br>
+          <span style="padding-left:15px">Let us agree, for definiteness, that $a_1+ \cdots + a_k$ will denote</span>
+          
+          $$a_1 + (a_2 + (a_3 + \cdots + (a_{n-2} + (a_{n-1}+a_n))) \cdots).$$
+          
+          Thus $a_1+a_2+a_3$ denotes $a_1+(a_2+a_3),$ and $a_1+a_2+a_3+a_4$ denotes $a_1+(a_2+a_3+a_4),$ etc.
+          <br>
+          <br>
+          (a) <span style="padding-left:15px">Prove that</span>
+          $$(a_1+ \cdots + a_k)+a_{k+1} = a_1+ \cdots + a_{k+1}.$$
+          <span style="padding-left:37px">Hint: Use induction on $k$.</span>
+          <br>
+          (b) <span style="padding-left:15px">Prove that if $n \geq k,$ then</span>
+          $$(a_1+ \cdots + a_k)+(a_{k+1}+ \cdots + a_n) = a_1+ \cdots + a_n.$$
+          <span style="padding-left:37px">Hint: Use part (a) to give a proof by induction on $k$.</span>
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="slide22"></div>
+<div class="carousel-caption" style="text-align:left">
+<div class="carousel-inner" style="text-align:justify; margin-left:100px; padding-bottom:700px">
+  <table style="margin-left:18px; width:75%">
+    <tr>
+      <td style="padding-left:15px; vertical-align:top"><p>(c)</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          Let $s(a_1, \dots, a_k)$ be some sum formed from $a_1, \dots, a_k.$ Show that
+          $$s(a_1, \dots, a_k) = a_1 + \cdots + a_k.$$
+
+          Hint: There must be two sums $s'(a_1, \dots, a_l)$ and $s''(a_{l+1}, \dots, a_k)$ such that
+          $$s(a_1, \dots, a_k) = s'(a_1, \dots, a_l) + s''(a_{l+1}, \dots, a_k).$$
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <table style="margin-left:0px; width:77%">
+    <tr>
+      <td style="vertical-align:top"><p>25.</p></td>
+      <td style="padding-left:15px; vertical-align:top">
+        <p>
+          Suppose that we interpret "number" to mean either $0$ or $1$, and + and $\cdot$ to be the operations defined by the following two tables.
+            <div style="margin-left:70px"> 
+             <div style="float:left"> 
+              <table>
+                <tr>
+                  <td style="padding:10px 19px 0 19px"><p>$+$</p></td>
+                  <td style="padding:10px 19px 0 19px"><p>$0$</p></td>
+                  <td style="padding:10px 19px 0 19px"><p>$1$</p></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 19px 0 19px"><p>$0$</p></td>
+                  <td style="border:1px solid grey; padding:10px 19px 0 19px"><p>$0$</p></td>
+                  <td style="border:1px solid grey; padding:10px 19px 0 19px"><p>$0$</p></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 19px 0 19px"><p>$1$</p></td>
+                  <td style="border:1px solid grey; padding:10px 19px 0 19px"><p>$1$</p></td>
+                  <td style="border:1px solid grey; padding:10px 19px 0 19px"><p>$0$</p></td>
+                </tr>
+              </table>
+            </div>
+
+            <div style="float:left; padding-left:50px"> 
+              <table>
+                <tr>
+                  <td style="padding:10px 19px 0 19px"><p>$+$</p></td>
+                  <td style="padding:10px 19px 0 19px"><p>$0$</p></td>
+                  <td style="padding:10px 19px 0 19px"><p>$1$</p></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 19px 0 19px"><p>$0$</p></td>
+                  <td style="border:1px solid grey; padding:10px 19px 0 19px"><p>$0$</p></td>
+                  <td style="border:1px solid grey; padding:10px 19px 0 19px"><p>$0$</p></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 19px 0 19px"><p>$1$</p></td>
+                  <td style="border:1px solid grey; padding:10px 19px 0 19px"><p>$1$</p></td>
+                  <td style="border:1px solid grey; padding:10px 19px 0 19px"><p>$0$</p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <br>
+        </p>
+      </td>
+    </tr>
+    <tr>
+  </table>
+  <br>
+  <p style="padding-left:38px">Check that properties P1&ndash;P9 all hold, even though $1+1=0.$</p>
+</div>
+</div>
+</div>
+
+  <!-- ******************************************************************* End of slides ******************************************************* -->
+
+  </div> <!-- Main inner -->
+ 
+    <!-- Set the actions to take when the arrows are clicked -->
+    <a class="left carousel-control" href="#theCarousel" data-slide="prev"></a>
+    <a class="right carousel-control" href="#theCarousel" data-slide="next"></a>
+  </div>
+</div>
+
+      <!-- CHAPTERS -->
+      <div class="panel-footer" style="border-radius:0%">
+        <button class="btn-chapters">1</button>
+        <button class="btn-chapters">2</button>
+        <button class="btn-chapters">3</button>
+        <button class="btn-chapters">4</button>
+        <button class="btn-chapters">5</button>
+        <button class="btn-chapters">6</button>
+        <button class="btn-chapters">7</button>
+        <button class="btn-chapters">8</button>
+        <button class="btn-chapters">9</button>
+        <button class="btn-chapters">10</button>
+        <button class="btn-chapters">12</button>
+        <button class="btn-chapters">13</button>
+        <button class="btn-chapters">14</button>
+        <button class="btn-chapters">15</button>
+        <button class="btn-chapters">16</button>
+        <button class="btn-chapters">17</button>
+        <button class="btn-chapters">18</button>
+        <button class="btn-chapters">19</button>
+        <button class="btn-chapters">20</button>
+        <button class="btn-chapters">21</button>
+        <button class="btn-chapters">22</button>
+        <button class="btn-chapters">23</button>
+        <button class="btn-chapters">24</button>
+        <button class="btn-chapters">25</button>
+        <button class="btn-chapters">26</button>
+        <button class="btn-chapters">27</button>
+        <button class="btn-chapters">28</button>
+        <button class="btn-chapters">29</button>
+        <button class="btn-chapters">30</button>
+        <a class="two" href="#" style="font-size:13px; float:right">CPS 17 | 30</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ************************************************************************************************************************************
+                                                                        WYSIWYG
+************************************************************************************************************************************** -->
+
+<div class="panel panel-default" style="margin-bottom:35px; border:none">
+      <div class="panel-heading" style="border:none">
+        <p class="panel-title">
+          <div style="padding-top:2px">
+            <table style="width:100%">
+              <tr>
+                <td>
+                  <a class="three" data-toggle="collapse" href="#collapse2" style="font-size:12px">TeX &#160 Sublime &#160 JSFiddle &#160 Mathematica</a>
+                </td>
+                <td>
+                  <div style="margin-top:-17px; font-size:8px !important" align="right">
+                      <ul class="pagination" style="margin-top:0px; margin-bottom:0px">
+                        <li data-target="#C4EdMS">
+                          <a class="two" href="#" style="border-radius:0%; margin-right:-8px">
+                            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true" style="font-size:10px">
+                          </a>
+                        </li>
+                        <li class="prev" data-target="#C4EdMS" data-slide="prev">
+                            <a class="two" style="border-radius:0%" href="#" aria-label="Previous">
+                                <span aria-hidden="true">
+                                  <span class="glyphicon glyphicon-triangle-left" aria-hidden="true" style="font-size:10px">
+                                  </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li data-target="#C4EdMS" data-slide-to="0"><a class="two" href="#">1</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="1"><a class="two" href="#">2</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="2"><a class="two" href="#">3</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="3"><a class="two" href="#">4</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="4"><a class="two" href="#">5</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="5"><a class="two" href="#">6</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="6"><a class="two" href="#">7</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="7"><a class="two" href="#">8</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="8"><a class="two" href="#">9</a></li>
+                        <li data-target="#C4EdMS" data-slide-to="9"><a class="two" href="#">10</a></li>
+                        <li class="next" data-target="#C4EdMS" data-slide="next">
+                            <a class="two" style="background:#FFFDFC; border-radius:0%" href="#" aria-label="Next">
+                                <span aria-hidden="true">
+                                  <span class="glyphicon glyphicon-triangle-right" aria-hidden="true" style="font-size:10px">
+                                  </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li data-target="#C4EdMS">
+                          <a class="two" href="#" style="border-radius:0%; margin-left:-8px">
+                            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true" style="font-size:10px">
+                          </a>
+                        </li>
+                      </ul> 
+                    </div> 
+                  </td>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </p>
+      </div>
+
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body" style="background:white; margin-top:-10px">
+          <div style="background:#f2f2f2; height:40px; width: 100%"></div>
+          <div id="C4EdMS" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class ="slideA"></div>
+                  <form method = "post" action = "mathematicalanalysis_module.php" id = "rtf">
+                    <table style="width:100%">
+                      <tr>
+                        <td style="vertical-align:top; border:1px solid #f2f2f2">
+                          <!-- Textarea -->
+                          <textarea name="input1" id="txt" autofocus>
+                          <?php
+                          $servername = "localhost";
+                          $username = "root";
+                          $password = "root";
+                          $dbname = "misc_maths";
+
+                          // 1. Create connection to server
+                          $conn = new mysqli($servername, $username, $password, $dbname);
+
+                          // 2. Check connection
+                          if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
+                          } 
+                          // echo "<br> Message 1: Connected successfully to Forms. <br><br>";
+
+                          // 3. Check for user input
+                          $value = $_POST['input1'];
+
+                          // Retreives data from table
+                          $sql = "SELECT * FROM demo";
+                          $result = $conn->query($sql);
+
+                          $sql = "SELECT * FROM demo";
+                          $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              // output data of each row
+                              while($row = $result->fetch_assoc()) {
+                              echo $row["input1"];
+                              }
+                            } 
+
+                          // Insert data into demo
+                          if ($value == $row["input1"]) {
+                            echo $value;
+                          }
+                          elseif ($value == TRUE){
+                          $sql = "INSERT INTO demo (input1) VALUES ('$value')";
+
+                          if ($conn->query($sql) === TRUE) {
+
+                          } else {
+                              echo "Error: " . $sql . "<br>" . $conn->error;
+                          }
+                          }
+                          ?>
+                          </textarea>
+                        </td>
+                        <td style="font-size:14px; 
+                                    font-family: 'Times'; 
+                                    text-align:left; width:50%; 
+                                    vertical-align:top; 
+                                    border:1px solid #f2f2f2">
+                          <div id="real" style="height:1250px; overflow:scroll; padding: 20px 20px 20px 20px;">
+                            <script>
+                              $(document).ready(function(){
+                                  $('#txt').keyup(function(){
+                                      $('#real').html($(this).val());
+                                      MathJax.Hub.Queue(["Typeset", MathJax.Hub, "real"]);
+                                  });
+                              });
+                              </script>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background:#F2F5F5; font-size:13px; border-left: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2;">
+                          <!-- Footerbar (file, submit, ..., n) -->
+                          <div>
+                            <button type="button" class="btn btn-WTB" onclick="bold()">
+                                <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                              </button>
+                            <button type="submit" class="btn btn-WTB" onclick="formsubmit()" style="font-size:13px">
+                                Submit
+                              </button>
+
+                            <button type="button" class="btn btn-WTB" onclick="bold()" style="font-size:13px">
+                                PDF
+                              </button>
+
+                            <button type="button" class="btn btn-WTB" onclick="bold()" style="font-size:13px">
+                                CDF
+                              </button>
+
+                            <button type="button" class="btn btn-WTB" onclick="bold()" style="font-size:13px">
+                                TeX
+                              </button>
+
+                            <button type="button" class="btn btn-WTB" onclick="bold()" style="font-size:13px">
+                                JSFiddle
+                              </button>
+                          </div>
+                        </td>
+                        <td style="background:#F2F5F5; border-bottom: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2;"></td>
+                      </tr>
+                    </table>
+                  </form>
+                </div>
+                <div class="item">
+                <div class ="slideB"></div>
+                  <form method = "post" action = "mathematicalanalysis_module.php" id = "rtf">
+                    <table style="width:100%">
+                      <tr>
+                        <td style="vertical-align:top; border:1px solid #f2f2f2">
+                          <!-- Textarea -->
+                          <textarea name="p4" id="problem4" autofocus>
+                          <?php
+                          $servername = "localhost";
+                          $username = "root";
+                          $password = "root";
+                          $dbname = "misc_maths";
+
+                          // 1. Create connection to server
+                          $conn = new mysqli($servername, $username, $password, $dbname);
+
+                          // 2. Check connection
+                          if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
+                          } 
+                          // echo "<br> Message 1: Connected successfully to Forms. <br><br>";
+
+                          // 3. Check for user input
+                          $value = $_POST['p4'];
+
+                          // Retreives data from table
+                          $sql = "SELECT * FROM c1";
+                          $result = $conn->query($sql);
+
+                          $sql = "SELECT * FROM c1";
+                          $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              // output data of each row
+                              while($row = $result->fetch_assoc()) {
+                              echo $row["p4"];
+                              }
+                            } 
+
+                          // Insert data into demo
+                          if ($value == $row["p4"]) {
+                            echo $value;
+                          }
+                          elseif ($value == TRUE){
+                          $sql = "INSERT INTO c1 (p4) VALUES ('$value')";
+
+                          if ($conn->query($sql) === TRUE) {
+
+                          } else {
+                              echo "Error: " . $sql . "<br>" . $conn->error;
+                          }
+                          }
+                          ?>
+                          </textarea>
+                        </td>
+                        <td style="font-size:14px; 
+                                    font-family: 'Times'; 
+                                    text-align:left; width:50%; 
+                                    vertical-align:top; 
+                                    border:1px solid #f2f2f2">
+                          <div id="real1" style="height:1250px; overflow:scroll; padding: 20px 20px 20px 20px;">
+                            <script>
+                              $(document).ready(function(){
+                                  $('#problem4').keyup(function(){
+                                      $('#real1').html($(this).val());
+                                      MathJax.Hub.Queue(["Typeset", MathJax.Hub, "real1"]);
+                                  });
+                              });
+                              </script>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background:#F2F5F5; font-size:13px; border-left: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2;">
+                          <!-- Footerbar (file, submit, ..., n) -->
+                          <div>
+                            <button type="button" class="btn btn-WTB" onclick="bold()">
+                                <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                              </button>
+                            <button type="submit" class="btn btn-WTB" onclick="formsubmit()" style="font-size:13px">
+                                Submit
+                              </button>
+
+                            <button type="button" class="btn btn-WTB" onclick="bold()" style="font-size:13px">
+                                PDF
+                              </button>
+
+                            <button type="button" class="btn btn-WTB" onclick="bold()" style="font-size:13px">
+                                CDF
+                              </button>
+
+                            <button type="button" class="btn btn-WTB" onclick="bold()" style="font-size:13px">
+                                TeX
+                              </button>
+
+                            <button type="button" class="btn btn-WTB" onclick="bold()" style="font-size:13px">
+                                JSFiddle
+                              </button>
+                          </div>
+                        </td>
+                        <td style="background:#F2F5F5; border-bottom: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2;"></td>
+                      </tr>
+                    </table>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      <div class="panel-footer" style="border:none; border-radius:0%">
+                                    <button class="btn-chapters">1</button>
+                                    <button class="btn-chapters">2</button>
+                                    <button class="btn-chapters">3</button>
+                                    <button class="btn-chapters">4</button>
+                                    <button class="btn-chapters">5</button>
+                                    <button class="btn-chapters">6</button>
+                                    <button class="btn-chapters">7</button>
+                                    <button class="btn-chapters">8</button>
+                                    <button class="btn-chapters">9</button>
+                                    <button class="btn-chapters">10</button>
+                                    <button class="btn-chapters">12</button>
+                                    <button class="btn-chapters">13</button>
+                                    <button class="btn-chapters">14</button>
+                                    <button class="btn-chapters">15</button>
+                                    <button class="btn-chapters">16</button>
+                                    <button class="btn-chapters">17</button>
+                                    <button class="btn-chapters">18</button>
+                                    <button class="btn-chapters">19</button>
+                                    <button class="btn-chapters">20</button>
+                                    <button class="btn-chapters">21</button>
+                                    <button class="btn-chapters">22</button>
+                                    <button class="btn-chapters">23</button>
+                                    <button class="btn-chapters">24</button>
+                                    <button class="btn-chapters">25</button>
+                                    <button class="btn-chapters">26</button>
+                                    <button class="btn-chapters">27</button>
+                                    <button class="btn-chapters">28</button>
+                                    <button class="btn-chapters">29</button>
+                                    <button class="btn-chapters">30</button>
+                                    <a class="three" href="#" style="font-size:13px; float:right"> P<sub>s</sub> 102 | 128</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+<div style="font-size:12px; padding: 0 0 0 0; margin-top:-10px;">
+    <a class="six" href="http://localhost:8888/Problem_Sets/spivakslides.php">P<sub>s</sub>: 24 | 27</a> 
+    <a class="six" href=""><span style="margin-left:20px">TeX: 4</span></a>
+    <a class="six" href=""><span style="margin-left:20px">CDF: 7</span></a>
+    <a class="six" href=""><span style="margin-left:20px">PDF: 3</span></a>
+    <a class="six" href=""><span style="margin-left:20px">Haske&lambda;&lambda;: 2</span></a>
+    <a class="six" href=""><span class="glyphicon glyphicon-trash" aria-hidden="true" style="float:right"></span></a>
+    <a class="six" href=""><span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="float:right; padding-right:10px; margin-top:-2px"></span></a>
+  </div>
+
+
+<hr>
+
+<h5 style="color:grey; padding-top:10px; margin-bottom:17px">Documents <span style="color:lightgrey; padding-left:10px">solution sets, notes, computations...</span></h5>
+<p style="font-size:13px">
+  C11 &mdash; Significance of the Derivative: Rolle's Theorem <a class="six" href="">pdf</a>
+  <br>
+  <br>
+  12: Appendix &mdash; Parametric Representation of Curves and their Inverse Functions <a class="six" href="">TeX</a>
+</p>
+
+<br>
+<br>
+<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">&larr; &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+<br>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>

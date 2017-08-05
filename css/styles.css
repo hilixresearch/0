@@ -127,7 +127,7 @@ hr.style-two {
 *******************************************************************/
 
 .btn-login {
-  color: grey;
+  color: white;
   font-size: 20px;
   background-color: transparent;
   border:none;
@@ -140,7 +140,7 @@ hr.style-two {
 
 }
 .btn-login:hover {
-  color: lightgrey;
+  color: #aaa;
   box-shadow: 0 0 0 white;
   transition: color .1s;
 }

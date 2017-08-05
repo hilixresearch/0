@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+
+    <title>hLX_Network &middot; Dashboard &middot; User Zero</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+    <!-- Fonts -->
+    <script src="https://use.fontawesome.com/5a20d27639.js"></script> <!-- FA -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!-- Material Icons -->
+
+
+    <!-- Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['', 'CPS', 'ICPS', 'COMP'],
+          ['Algebra', 750, 250, 200],
+          ['Analysis', 590, 430, 325],
+          ['Topology', 330, 660, 150],
+          ['Logic', 800, 50, 375]
+        ]);
+
+        var options = {
+            legend:{position:'none'},
+            colors: ['#D5E0E7', '#D5E0E7', '#D5E0E7'],
+            // chart: {
+            //     title: 'Company Performance',
+            //     subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+            // }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+<!--***** Styles ****-->
+<style type="text/css">
+
+.navbar-one{
+    background: grey;
+    opacity: .9;
+    font-family: 'Avenir', 'light;'; 
+    font-size:12px; 
+    border:none; 
+    margin-top:-17px;
+}
+
+.navbar-one .navbar-brand {
+    color: white;
+}
+
+.navbar-one .navbar-brand:hover {
+    color: lightgrey;
+}
+
+input[type = search] {
+    width: 79.5%;
+    border: 2px solid grey !important;
+    font-size: 13px;
+    font-family: "Avenir", "Light";
+    background-color: #f2f2f2;
+    padding: 3px 2.5px 3px 25px;
+    margin-top: 11px;
+    margin-bottom: -5px;
+    margin-left: 13px;
+    -webkit-transition: width 0.4s ease-in-out; border:2px;
+    transition: width 0.4s ease-in-out; border:2px;
+    color: grey
+}
+
+input[type=search]:focus {
+    width: 150%;
+    outline: none;
+    border: 2px solid #00ace6;
+}
+
+input[type=search]:hover {
+    border: 2px solid #00ace6 !important;
+    background: white;
+}
+
+.dropdown-toggle{color: white !important; text-decoration: none !important}
+.dropdown-toggle:active, .open .dropdown-toggle {background:none !important; color:#cccccc !important;}
+
+.dropdown-toggle:hover{color: #cccccc !important}
+.panel{border-radius: 0% !important}
+.panel-heading{border-radius: 0% !important; border:none; background: linear-gradient(#F2F3F4, #D0D3D4); padding-top: 0px; padding-bottom: 0px; font-size: 12px}
+.panel-body{font-size: 12px}
+
+.btn-default{border-radius: 0%; background: #f2f2f2; color: grey; border:1px solid #f2f2f2; font-size: 12px}
+.btn-default:hover{border:1px solid #E5E7E9}
+
+.btn-shasta{border-radius: 0%; background: transparent; color: white; padding: 7px}
+.btn-shasta:hover{color: grey}
+
+.btn-shasta1{border-radius: 0%; background: white; color: grey; border:1px solid #f2f2f2; font-size: 12px}
+.btn-shasta1:hover{color: #333}
+
+code{background: #f2f2f2; color:grey; border-radius: 0%; font-size: 11px;}
+
+
+a{color: #85929E} a:hover{text-decoration: none}
+a.one{font-size: 12px; color:grey;}
+a.two{font-size: 12px; color: grey !important; border-radius:0% !important}
+a.three{color: white !important; background: transparent; font-size: 13px} /* sidebar links */
+a.three:hover{color: grey !important; background: none !important} /* sidebar links */
+a.five{color: white !important; margin-left:-10px} /* dropdown_menu */
+a.five:hover{background: transparent !important; color: #C9D9D7 !important}
+a.six{color:lightgrey;}
+a.six:hover{color:grey;}
+
+.media-body{color:#515A5A;background: #FFFDFC}
+
+.btn-maple{
+    position:relative; 
+    float:right; 
+    top:14px;
+    border-radius: 0%;
+    color:grey;
+    font-size:13px;  
+    background: none; 
+    /*border:1px solid transparent;*/ 
+    border-left:1px solid #D7DBDD; 
+    border-top:1px solid #D7DBDD; 
+    border-right:1px solid #D7DBDD;
+}
+
+textarea{height:200px; border: 1px solid lightgrey; font-size: 12px; font-family: 'Avenir' 'light'; padding:10px; width: 200px}
+
+
+</style>
+
+
+</head>
+
+<body style="background:#f8f8f8">
+
+<!-- Navbar -->
+<nav class="navbar navbar-one navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!-- Toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <!-- Brand -->
+      <a class="navbar-brand" href="../HRTDB/index.html" style="font-size:17px; padding-top:24px; padding-left:20px">hilix</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <div style="margin-top:27px">
+                <a href="#" class="dropdown-toggle"
+                            data-toggle="dropdown" 
+                            role="button" 
+                            aria-haspopup="true"
+                            aria-expanded="false">Course Tracks <span class="caret"></span></a>
+                    <ul class="dropdown-menu" 
+                    style="width:1466%; background: #BBD0DD; border: 1px solid #BBD0DD; margin-top:6px; margin-left:-70px; border-radius:0%; padding-right:50px">
+                        
+                        <li>
+              <div class="jumbotron" style="background: #BBD0DD; color:white; font-size:13px">
+                <div class="row" style="padding-left:110px">
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Pure Mathematics</h5>
+                    Introduction to analysis
+                    <br>
+                    Differential equations
+                    <br>
+                    Linear algebra
+                    <br>
+                    Multvariable calculus
+                    <br>
+                    Abstract algebra
+                    <br>
+                    Elementary topology
+                    <br>
+                    Real analysis
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Applied Mathematics</h5>
+                    Calculus
+                    <br>
+                    Differential equations
+                    <br>
+                    Linear algebra
+                    <br>
+                    Multvariable calculus
+                    <br>
+                    Abstract algebra
+                    <br>
+                    Mathematical statistics
+                    <br>
+                    Numerical analysis
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Bioinformatics</h5>
+                    Calculus
+                    <br>
+                    CS probability
+                    <br>
+                    Structure and reactivity
+                    <br>
+                    Genetics
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Mechanics
+                    <br>
+                    Programming methodology
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12" style="margin-bottom:20px">
+                    <h5>Computer Engineering</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    CS probability
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    Programming languages 
+                    <br>
+                    Operating systems
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Computational Theory</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL Theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Mathematics</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    OperatingsSystems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL Theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Computer Science</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Computer Science</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  </div>
+                </div>
+            </li>
+                        
+                    </ul>
+            </div>
+        </li>
+      </ul>
+
+      <!-- Search -->
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="search" 
+                 placeholder="Search..." 
+                 style="background-image: url('Images/search.png'); background-repeat:no-repeat;" >
+        </div>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <div style="margin-top:7px; padding-right: 10px">
+                <i class="fa fa-bar-chart" aria-hidden="true" style="padding-top:20px; font-size:14px; color:lightgrey"></i>
+            </div>
+        </li>
+        <li class="dropdown" style="margin-top:1px">
+            <div style="margin-top:24px; padding-right:20px">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown" 
+                role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons" aria-hidden="true" style="margin-top:-1px; font-size:19px">apps</i>
+                <ul class="dropdown-menu" 
+                    style="margin-top:2px; font-size:13px; border-radius:0%; background:linear-gradient(lightgrey, grey);
+                    border: 1px solid silver; padding:25px">
+                    <div align="center"><img src="Images/stel_icoso.png" style="padding-left:15px"> 
+                        <br> 
+                        <h5 style="color:white; padding-left:15px">hILIXRT</h5>
+                        <a class="five" href="" style="font-size:14px; padding-left:24px">@hilixrt</a> 
+                        <span style="color:white; padding-left:0px"></span> 
+                        <a class="five" href="../index.html" style="font-size:12px; padding-left:15px; color:#C9D9D7 !important">SIGNOUT</a>
+                    </div>
+                    <br>
+                    <li role="separator" class="divider"></li>
+                    <br>
+                    <li><a class="five" style="cursor:default">Hilix Admin</a></li>
+                    <li><a class="five" href="http://localhost:8888/Hilix/Profile/luqmanmalik.html">My Portfolio</a></li>
+                    <li><a class="five" href="http://localhost:8888/Hilix/HD/database.php">Hilix Database</a></li>
+                    <li><a class="five" href="#">Account settings</a></li>
+                    <br>
+                    <li role="separator" class="divider"></li>
+                    <br>
+                    <li><a class="five" href="#">Manage storage space</a></li>
+                    <br>
+                </ul>
+            </div>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- Siderbar -->
+    <div id="wrapper" style="margin-top:53px">
+        <div id="sidebar-wrapper" style="background: linear-gradient(lightgrey, grey)">
+            <ul class="sidebar-nav" style="background:transparent">
+                <li class="sidebar-brand"> 
+                    <a class="three" style="background: linear-gradient(lightgrey, grey)!important; font-size:15px; font-family:'Arial'; cursor:defualt">
+                      <i class="fa fa-database"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a class="three" href="#" style="margin-top:-7px">Net Statistics</a>
+                </li>
+                <li>
+                    <a class="three" href="Modules/index.html">Module Stack</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Problem Sets</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Mathematica</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Hilix Shasta</a>
+                </li>
+                <li>
+                    <a class="three" href="#">JS Fiddle</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Conversations</a>
+                </li>
+                </li>
+                <li>
+                    <a class="three" href="#">Hilix Software</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Solution Sets</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Media Files</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Research Docs</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Math Textbooks</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Logic Textbooks</a>
+                </li>
+                <li>
+                    <a class="three" href="#">CS Textbooks</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Ling Textbooks</a>
+                </li>
+                <li>
+                    <a class="three" href="#">Hilix Corpora</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top:-17px;"> <!-- -17px og / 51 with Maple btn -->
+                        <a class="btn btn-maple">Krantz&ndash;polynomials of class <b>N</b> &ndash; <span style="font-family:'Times'">&pi; <sup><i>k</i></sup></span></a>
+                        <h4 style="color:grey; margin-bottom:17px">Course track &#160 <span style="color:lightgrey">Mathematical logic</span></h4>
+                            <table style="width:100%">
+                                <tr>
+                                    <td style="vertical-align:top">
+                                        <!-- Workbench -->
+                                        <div class="panel panel-default" style="box-shadow:none">
+                                            
+                                            <!-- Default panel contents -->
+                                            <!-- (Row 1, Column 1) -->
+                                            <div class="panel-heading" style="color:grey; background:white; border-bottom:1px solid lightgrey; padding:10px 10px">Content Summery</div>
+                                                <div class="panel-body" style="padding-top:20px">
+                                                    <!-- Table 1 -->
+                                                    <table style="width:100%">
+                                                        <tr>
+                                                            <td><a style="text-decoration:none" href="">015 Complete modules</a></td>
+                                                            <td><a style="text-decoration:none" href="">17 JSS projects</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a style="text-decoration:none" href="">054 Mathematica projects</a></td>
+                                                            <td><a style="text-decoration:none" href="">05 Resreach projects</a></td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td><a style="text-decoration:none" href="">030 Hakell projects</a></td>
+                                                            <td><a style="text-decoration:none" href="">23 C++ projects</a></td>
+                                                        </tr>
+                                                        <tr><td>&#160</td></tr>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="">Reasearch dosuments &#160</a> <i class="fa fa-archive" aria-hidden="true"></i>
+                                                            </td>
+                                                            <td>
+                                                                <span style="color: lightgrey">
+                                                            <a class="six" href="">H<sub>s</sub>:</a> 1.34
+                                                        </span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    </div>
+                                                    <div class="panel-heading" style="border-bottom:1px solid lightgrey; margin-bottom:-1px; color:lightgrey; background:#F4F6F7;
+                                                                padding-top:15px">Storage Space
+                                                        <br>
+                                                        <br>
+                                                        <table style="width:100%">
+                                                            <tr>
+                                                                <td>
+                                                                    <p><i class="fa fa-database" aria-hidden="true" style="color:grey"></i> <a style="text-decoration:none" href="">3,072 MB SS available</a></p>
+                                                                </td>
+                                                                 <td>
+                                                                    <p><i class="fa fa-database" aria-hidden="true" style="color:grey"></i> <a style="text-decoration:none" href="">3,072 MB (1.00%) SS used</a></p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modules -->
+                                                <div class="panel panel-default" style="box-shadow:none">
+                                                <!-- Default panel contents -->
+                                                <div class="panel-heading" style="color:white">Modules</div>
+                                                    <!-- List group -->
+                                                    <ul class="list-group" style="padding-top:5px; padding-left:15px">
+                                                        <li class="list-group-item">
+                                                            <nav aria-label="Page navigation">
+                                                              <ul class="pagination" style="margin-top:20px; margin-bottom:0px">
+                                                                <li><a class="two" href="http://localhost:8888/Problem_Sets/spivakslides.php">&#160 1</a></li>
+                                                                <li><a class="two" href="#">&#160 2</a></li>
+                                                                <li><a class="two" href="#">&#160 3</a></li>
+                                                                <li><a class="two" href="#">&#160 4</a></li>
+                                                                <li><a class="two" href="#">&#160 5</a></li>
+                                                                <li><a class="two" href="#">&#160 6</a></li>
+                                                                <li><a class="two" href="#">&#160 7</a></li>
+                                                                <li><a class="two" href="#">&#160 8</a></li>
+                                                                <li><a class="two" href="#">&#160 9</a></li>
+                                                                <li><a class="two" href="#">10</a></li>
+                                                                <li><a class="two" href="#">11</a></li>
+                                                                <li><a class="two" href="#">12</a></li>
+                                                                <br>
+                                                                <br>
+                                                                <li><a class="two" href="#">13</a></li>
+                                                                <li><a class="two" href="#">14</a></li>
+                                                                <li><a class="two" href="#">15</a></li>
+                                                                <li><a class="two" href="#">16</a></li>
+                                                                <li><a class="two" href="#">17</a></li>
+                                                                <li><a class="two" href="#">18</a></li>
+                                                                <li><a class="two" href="#">19</a></li>
+                                                                <li><a class="two" href="#">20</a></li>
+                                                                <li><a class="two" href="#">21</a></li>
+                                                                <li><a class="two" href="#">22</a></li>
+                                                                <li><a class="two" href="#">23</a></li>
+                                                                <li><a class="two" href="#">24</a></li>
+                                                                <br>
+                                                                <br>
+                                                                <li><a class="two" href="#">25</a></li>
+                                                                <li><a class="two" href="#">26</a></li>
+                                                                <li><a class="two" href="#">27</a></li>
+                                                                <li><a class="two" href="#">28</a></li>
+                                                                <li><a class="two" href="#">29</a></li>
+                                                                <li><a class="two" href="#">30</a></li>
+                                                                <li><a class="two" href="#">31</a></li>
+                                                                <li><a class="two" href="#">32</a></li>
+                                                                <li><a class="two" href="#">33</a></li>
+                                                                <li><a class="two" href="#">34</a></li>
+                                                                <li><a class="two" href="#">35</a></li>
+                                                                <li><a class="two" href="#">36</a></li>
+                                                                <br>
+                                                                <br>
+                                                                <li><a class="two" href="#">37</a></li>
+                                                                <li><a class="two" href="#">38</a></li>
+                                                                <li><a class="two" href="#">39</a></li>
+                                                                <li><a class="two" href="#">40</a></li>
+                                                                <li><a class="two" href="#">41</a></li>
+                                                                <li><a class="two" href="#">42</a></li>
+                                                                <li><a class="two" href="#">43</a></li>
+                                                                <li><a class="two" href="#">44</a></li>
+                                                                <li><a class="two" href="#">45</a></li>
+                                                                <li><a class="two" href="#">46</a></li>
+                                                                <li><a class="two" href="#">47</a></li>
+                                                                <li><a class="two" href="#">48</a></li>
+                                                                <br>
+                                                                <br>
+                                                                <li><a class="two" href="#">49</a></li>
+                                                                <li><a class="two" href="#">50</a></li>
+                                                                <li><a class="two" href="#">51</a></li>
+                                                                <li><a class="two" href="#">52</a></li>
+                                                                <li><a class="two" href="#">53</a></li>
+                                                                <li><a class="two" href="#">54</a></li>
+                                                                <li><a class="two" href="#">55</a></li>
+                                                                <li><a class="two" href="#">56</a></li>
+                                                                <li><a class="two" href="#">57</a></li>
+                                                                <li><a class="two" href="#">58</a></li>
+                                                                <li><a class="two" href="#">59</a></li>
+                                                                <li><a class="two" href="#">60</a></li>
+                                                                <br>
+                                                                <br>
+                                                                <li><a class="two" href="#">61</a></li>
+                                                                <li><a class="two" href="#">62</a></li>
+                                                                <li><a class="two" href="#">63</a></li>
+                                                                <li><a class="two" href="#">64</a></li>
+                                                                <li><a class="two" href="#">65</a></li>
+                                                                <li><a class="two" href="#">66</a></li>
+                                                                <li><a class="two" href="#">67</a></li>
+                                                                <li><a class="two" href="#">68</a></li>
+                                                                <li><a class="two" href="#">69</a></li>
+                                                                <li><a class="two" href="#">70</a></li>
+                                                                <li><a class="two" href="#">71</a></li>
+                                                                <li><a class="two" href="#">72</a></li>
+                                                                <br>
+                                                                <br>
+                                                                <li><a class="two" href="#">73</a></li>
+                                                                <li><a class="two" href="#">74</a></li>
+                                                                <li><a class="two" href="#">75</a></li>
+                                                                <li><a class="two" href="#">76</a></li>
+                                                                <li><a class="two" href="#">77</a></li>
+                                                                <li><a class="two" href="#">78</a></li>
+                                                                <li><a class="two" href="#">79</a></li>
+                                                                <li><a class="two" href="#">80</a></li>
+                                                                <li><a class="two" href="#">81</a></li>
+                                                                <li><a class="two" href="#">82</a></li>
+                                                                <li><a class="two" href="#">83</a></li>
+                                                                <li><a class="two" href="#">84</a></li>
+                                                              </ul>
+                                                              <br>
+                                                              <br>
+                                                            </nav>
+                                                        </li>
+                                                    </ul>
+                                                    </div>
+
+
+                                                <!-- Continue Reading -->
+                                                <div class="panel panel-default" style="box-shadow:none">
+                                                <!-- Default panel contents -->
+                                                <div class="panel-heading" style="color:white">Completed modules</div>
+                                                    <!-- List group -->
+                                                    <ul class="list-group" style="padding-top:5px">
+                                                        <li class="list-group-item">
+                                                            <ul class="pagination">
+                                                                <li>
+                                                                    <a class="two" style="background:#FFFDFC" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true">Mathematics</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li><a class="two" href="#">1</a></li>
+                                                                <li><a class="two" href="#">2</a></li>
+                                                                <li><a class="two" href="#">3</a></li>
+                                                                <li><a class="two" href="#">4</a></li>
+                                                                <li><a class="two" href="#">5</a></li>
+                                                                <li><a class="two" href="#">6</a></li>
+                                                                <li><a class="two" href="#">7</a></li>
+                                                                <li><a class="two" href="#">8</a></li>
+                                                                <li><a class="two" href="#">9</a></li>
+                                                                <li><a class="two" href="#">10</a></li>
+                                                                <li><a class="two" href="#">11</a></li>
+                                                                <li>
+                                                                    <a class="two" style="background:#FFFDFC" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">&raquo;</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="pagination">
+                                                                <li>
+                                                                    <a class="two" style="background:#FFFDFC" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true" style="padding-right:38px">Logic</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li><a class="two" href="#">1</a></li>
+                                                                <li><a class="two" href="#">2</a></li>
+                                                                <li><a class="two" href="#">3</a></li>
+                                                                <li><a class="two" href="#">4</a></li>
+                                                                <li><a class="two" href="#">5</a></li>
+                                                                <li><a class="two" href="#">6</a></li>
+                                                                <li><a class="two" href="#">7</a></li>
+                                                                <li><a class="two" href="#">8</a></li>
+                                                                <li><a class="two" href="#">9</a></li>
+                                                                <li><a class="two" href="#">10</a></li>
+                                                                <li><a class="two" href="#">11</a></li>
+                                                                <li>
+                                                                    <a class="two" style="background:#FFFDFC" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">&raquo;</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="pagination">
+                                                                <li>
+                                                                    <a class="two" style="background:#FFFDFC" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true" style="padding-right:13px">Linguistics</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li><a class="two" href="#">1</a></li>
+                                                                <li><a class="two" href="#">2</a></li>
+                                                                <li><a class="two" href="#">3</a></li>
+                                                                <li><a class="two" href="#">4</a></li>
+                                                                <li><a class="two" href="#">5</a></li>
+                                                                <li><a class="two" href="#">6</a></li>
+                                                                <li><a class="two" href="#">7</a></li>
+                                                                <li><a class="two" href="#">8</a></li>
+                                                                <li><a class="two" href="#">9</a></li>
+                                                                <li><a class="two" href="#">10</a></li>
+                                                                <li><a class="two" href="#">11</a></li>
+                                                                <li>
+                                                                    <a class="two" style="background:#FFFDFC" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">&raquo;</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="pagination">
+                                                                <li>
+                                                                    <a class="two" style="background:#FFFDFC" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true" style="padding-right:8px">Computer science</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li><a class="two" href="#">1</a></li>
+                                                                <li><a class="two" href="#">2</a></li>
+                                                                <li><a class="two" href="#">3</a></li>
+                                                                <li><a class="two" href="#">4</a></li>
+                                                                <li><a class="two" href="#">5</a></li>
+                                                                <li><a class="two" href="#">6</a></li>
+                                                                <li><a class="two" href="#">7</a></li>
+                                                                <li><a class="two" href="#">8</a></li>
+                                                                <li><a class="two" href="#">9</a></li>
+                                                                <li><a class="two" href="#">10</a></li>
+                                                                <li>
+                                                                    <a class="two" style="background:#FFFDFC" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">&raquo;</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    </div>
+
+
+
+                                                    <!-- Computational Projects -->
+                                                    <div class="panel panel-default" style="box-shadow:none">
+                                                        <!-- Default panel contents -->
+                                                        <div class="panel-heading" style="color:white">Computaional Projects</div>
+                                                            <div class="panel-body">
+                                                                <p>
+                                                                    <ul class="nav nav-tabs">
+                                                                        <li role="presentation" class="active"><a href="#">Mathematica</a></li>
+                                                                        <li role="presentation"><a href="#">Shasta</a></li>
+                                                                        <li role="presentation"><a href="#">Haksell</a></li>
+                                                                        <li role="presentation"><a href="#">C++</a></li>
+                                                                    </ul>
+
+                                                                </p>
+                                                            </div>
+
+                                                            <!-- List group -->
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item" style="border:none; font-size:12px">
+                                                                    <a style="text-decoration:none" href="#">Sequence Polynomials in Partially Computable &Omega;&ndash;Shievs</a>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a style="text-decoration:none" href="#">Sequence Polynomials over <span style="font-family:'Times'"><span style="font-weight:bold">R</span> = { &fnof; : <i>S</i> &rarr; <i>T</i> }</span></a>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a style="text-decoration:none" href="#">Verafication Algorithms in Polynomial <span style="font-family:'Times'">( O<sup><i>k</i></sup> )</span></a>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a style="text-decoration:none" href="#">Some Notes on <span style="font-family:'Times'">N</span>&ndash;Computable Forms</a>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a style="text-decoration:none" href="#">Voro++ tesselation, and other Numerical Libraries in: C++; Haskell</a>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a style="text-decoration:none" href="#">Graph Sequencing in VerteK over N&ndash;Polynomial Time</a>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a style="text-decoration:none" href="#">Nested Algorithms in Relational Algebra</a>
+                                                                    <br>
+                                                                    <br>
+                                                                </li>
+                                                            </ul>
+                                                    </div>
+
+                                                    <!-- Recent Conversations -->
+                                                    <div class="panel panel-default" style="box-shadow:none">
+                                                        <!-- Default panel contents -->
+                                                        <div class="panel-heading" style="color:grey; background:white; border:none; padding-top:20px">Conversations</div>
+                                                            <!-- List group -->
+                                                            <ul class="list-group" style="padding-top:20px">
+                                                                <li class="list-group-item" style="background:#FFFDFC">
+                                                                    <div class="media">
+                                                                        <div class="media-left">
+                                                                            <a href="#"><img class="media-object" src="Images/Algebra.jpeg"></a>
+                                                                        </div>
+                                                                    <div class="media-body">
+                                                                        <p class="media-heading"><span style="color:grey">From</span> <a href="#" class="one">Noam Tarski</a> <span style="color:grey">on</span> <a href="#" class="one">Non&ndash;Standard Models of Arithmetik</a></p>
+                                                                        <p style="font-size: 12px">
+                                                                        Are there Tarski&ndash;Grothendieck representations of arithmetik that are consistent in higher&ndash;order logics, and still capture the central properties stressed in this p_set? It is a difficult set of axioms to...
+                                                                        <br>
+                                                                        <br>
+                                                                        </p>
+                                                                    </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item" style="background:#FFFDFC">
+                                                                    <div class="media">
+                                                                        <div class="media-left">
+                                                                            <a href="#"><img class="media-object" src="Images/Algebra.jpeg"></a>
+                                                                        </div>
+                                                                    <div class="media-body">
+                                                                        <p class="media-heading"><span style="color:grey">From</span> <a href="#" class="one">Noam Tarski</a> <span style="color:grey">on</span> <a href="#" class="one">Non&ndash;Standard Models of Arithmetik</a></p>
+                                                                        <p style="font-size: 12px">
+                                                                        Can you put the upper&ndash;bound lemma 3.1 into more context? I think I may be confused about its general predecates...
+                                                                        <br>
+                                                                        <br>
+                                                                        </p>
+                                                                    </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item" style="background:#FFFDFC">
+                                                                    <div class="media">
+                                                                        <div class="media-left">
+                                                                            <a href="#"><img class="media-object" src="Images/springerlogo.png"></a>
+                                                                        </div>
+                                                                    <div class="media-body">
+                                                                        <p class="media-heading"><span style="color:grey">From</span> <a href="#" class="one">Anton Yeltz</a> <span style="color:grey">on</span> <br> <a href="#" class="one">Determinants: Cramer's Rule for Third&ndash;Order Systems of Equations</a></p>
+                                                                        <p style="font-size: 12px">
+                                                                        Can this result be extended, i.e., generalized to <span style="font-family:'Times'"><i>n</i></span>&ndash;order systems?
+                                                                        <br>
+                                                                        <br>
+                                                                        </p>
+                                                                    </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                                                <li class="list-group-item">Vestibulum at eros</li>
+                                                            </ul>
+                                                        </div>
+
+
+                                    <!-- Notebook -->
+                                    <td style="vertical-align:top">
+                                        <div class="panel panel-default" style="margin-left:20px; box-shadow:none">
+                                            
+                                            <!-- Default panel contents -->
+                                            <!-- (Row 1, Column 2) -->
+                                            <div class="panel-heading">
+                                                <button class="btn btn-shasta" style="padding:0px">Shasta</button>
+                                            </div>
+                                                <div class="panel-body">
+                                                    <p>
+                                                        <form style="font-size:12px">
+                                                            <input style="width:100%; padding-left:5px" placeholder="New document">
+                                                            <br>
+                                                            <br>
+                                                            <input style="width:100%; height:100px; padding-bottom:70px; padding-left:5px">
+                                                            <br>
+                                                            <br>
+                                                        </form>
+                                                        <hr>
+                                                    </p>
+                                                    <table style="width:100%; margin-bottom:20px; margin-left:20px;">
+                                                        <tr>
+                                                            <td>
+                                                                <textarea placeholder="Haske&lambda;&lambda;"></textarea>
+                                                            </td>
+                                                            <td>
+                                                                <textarea placeholder="C++"></textarea>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <button class="btn btn-shasta1" >
+                                                        <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                                                    </button>
+                                                    <button class="btn btn-shasta1" >Submit</button>
+                                                    <button class="btn btn-shasta1" >PDF</button>  
+                                                    <button class="btn btn-shasta1" >CDF</button>  
+                                                    <button class="btn btn-shasta1" >TeX</button>
+                                                    <button class="btn btn-shasta1" >JSFiddle</button>    
+                                                </div>
+                                            </div>
+
+
+                                            <div class="panel panel-default" style="margin-left:20px; box-shadow:none">
+                                                <!-- Default panel contents -->
+                                                <div class="panel-heading" style="color:white">Statistics</div>
+                                                    <div class="panel-body">
+                                                        <p>
+                                                            <!--Div that will hold the column chart-->
+                                                            <div id="columnchart_material" style="width: 480px; height: 250px;"></div>
+                                                            <br>
+                                                            <button class="btn btn-default" style="margin-left:400px; margin-bottom:-10px">View All</button>
+                                                        </p>
+                                                            </div>
+                                                                <!-- List group -->
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item" style="background:#FFFDFC">
+                                                                        <br>
+                                                                        <span style="color:#515A5A">Top Solution Sets</span>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Borel Pointclasses and &phi;&ndash;Extenders, &#160 [Scanlon: C13]</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Homotopical Algebras and Their Set&ndash;Partitions, &#160 [Woodin: C3]</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Bounded Lagrangien Fields, &#160 [Besque: C7]</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Derivations with Identity Predicates, &#160 [OLT: C7]</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Operator Algebras of Continuous Polynomials in <span style="font-family:'Times'; font-weight:bold">R</span>, &#160 [Haan: C23]</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Relations and Model&ndash;Theoretic Structures, &#160 [OLP: C6]</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Maximally Consistent Sets of Sentences, &#160 [OLP: C8]</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Non&ndash;Standard Models of Arithmetik, &#160 [OLP: C11]</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">The L&ouml;wenheim&ndash;Skolem Theorem and Finite Structure Embeddings</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <br>
+                                                                        <span style="color:#515A5A">Top Computational Projects</span>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Quantfier Ellimination for Hilix Shasta</a>
+                                                                        <br>
+                                                                        <br>
+                                                                        <a href="#" class="one">Several Numerical Solutions to Compact Partial Differential Equations</a>
+                                                                        <br>
+                                                                        <br>
+                                                                    </li>
+                                                                </ul>
+                                            </div>
+                                            
+                            </table>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">&larr; &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

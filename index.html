@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>hILIXRT</title>
+    <title>HILIXRT</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!-- Styles (CSS) / Material Icons -->
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -71,7 +73,7 @@
 
     <!-- Login -->
     <!-- Trigger / Open The Modal -->
-    <button id="libtn" class="btn-login">&#160</button>
+    <button id="libtn" class="btn-login"><i class="material-icons">ac_unit</i></button>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -181,7 +183,7 @@
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         if ( username == " " && password == " "){
-          window.location = "http://localhost:8888/Hilix/Dashboard/dashboard.html"; // Redirecting to localhost page.
+          window.location = "Dashboard/index.html"; // redirect to dashboard
         return false;
         }
         else{

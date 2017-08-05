@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hLX_Network &middot; User Zero</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<script src="https://use.fontawesome.com/5a20d27639.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- Module Tabs -->
+
+
+<style type="text/css">
+
+/************************************************************************
+ Navbar-menue
+************************************************************************/
+
+.jumbotron{color: grey;}
+
+.navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    border-radius: 2px;
+    border: 1px solid white;
+  }
+
+input[type = text] {
+        position: relative;
+        top: 1px;
+        width: 85%;
+        box-sizing: border-box;
+        border: .5px solid lightgrey;
+        font-size: 13px;
+        font-family: "Avenir", "Light";
+        background-color: white;
+        padding: 3px 2.5px 3px 25px;
+        margin-top: 5px;
+        -webkit-transition: width 0.4s ease-in-out; border:.5px;
+        transition: width 0.4s ease-in-out; border:.5px;
+        color: grey
+    }
+
+input[type=text]:focus {
+        width: 150%;
+        outline: 2px solid #00ace6;
+        border: 2px solid lightgrey !important;
+        margin-top: 3px;
+        margin-left: -2px;
+    }
+
+input[type=text]:hover {
+        outline: 2px solid #00ace6;
+        background: white;
+        -webkit-transition: width 0.4s ease-in-out; border:.5px;
+        transition: width 0.4s ease-in-out; border:.5px;
+    }
+
+.dropdown-toggle:hover{background: transparent !important}
+.dropdown-toggle:active, .open .dropdown-toggle {background:none !important; color:#cccccc !important;}
+
+/*  Brand-text Color  */
+#main_texts{color:#999999;}
+#main_texts:hover{color:#b3b3b3;}
+
+/************************************************************************
+ Font Colors
+************************************************************************/
+
+.navbar-one{background: linear-gradient(lightgrey, grey);}
+
+.navbar-one .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: lightgrey;  /*Sets the text hover color on navbar*/
+}
+/*.navbar-default {
+    color: white;
+}*/
+.navbar-one .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+}
+.navbar-one .navbar-brand {
+    color: white;
+    padding-top:1px;
+}
+.navbar-one .navbar-brand:hover {
+    color: lightgrey;
+}
+
+/************************************************************************
+ Glyph Icons
+************************************************************************/
+
+.glyphicon-envelope {
+    background: none;
+    margin-left: 5px;
+    cursor: pointer;
+} 
+
+.glyphicon-envelope:hover {color:grey;}
+
+.glyphicon-leaf {
+    background: none;
+    margin-left: 5px;
+    cursor: pointer;
+} 
+
+.glyphicon-leaf:hover {color:grey;}
+
+.glyphicon-font {
+    background: none;
+    margin-left: 5px;
+    cursor: pointer;
+} 
+
+.glyphicon-font:hover {color:grey;}
+
+
+/************************************************************************
+ Third / Fourth Navbar-Menues
+************************************************************************/
+
+table.style1 {
+    
+    width:100%;
+    font-family: 'Avenir', 'light';
+    font-size: 13px;
+    border-collapse: separate;
+    border-spacing: 18px;
+    background: #f8f8f8;
+    text-align: right;
+    word-spacing: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+a.one {
+    text-decoration: none;
+    color: #9d9d9d;
+    cursor: pointer;
+}
+
+a.one:hover{color:lightgrey;}
+
+table.style2 {
+    
+    width:100%;
+    font-family: 'Avenir', 'light';
+    font-size: 13px;
+    border-collapse: separate;
+    border-spacing: 18px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+
+/************************************************************************
+Bio-Hover Effect
+************************************************************************/
+
+div.shortbio {
+    background-color: none;
+    opacity: .5;
+    width: 306px;
+    padding: 102px 0 102px 0;
+    position: fixed;
+    top:53px;
+    left: 150px;
+}
+div.shortbio:hover {
+    background: #f2f2f2; 
+    border-right: 1px solid lightgrey}
+
+
+
+/************************************************************************
+ Achievement Layout
+************************************************************************/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+    font-family: 'Avenir', 'light';
+    font-size: 14px;
+    color: grey;
+    background: #f9f9f9
+}
+
+header.x {
+  background: linear-gradient(#E5E8E8, #CCD1D1);
+  color:white; 
+  margin-top: 50px;
+  text-align: left;
+  font-family: 'Avenir', 'light';
+}
+footer.x {
+  background: linear-gradient(#E5E8E8, #CCD1D1);
+  color:white;
+  text-align: left;
+  font-family: 'Avenir', 'light';
+}
+.nav-x {
+  background:#eee;
+  text-align: left;
+  margin-left: -30px;
+  padding-right: 0px;
+}
+
+.nav-x ul {
+  list-style-type: none;
+  margin-right: -100px;
+  font-family: 'Avenir', 'light';
+}
+   
+.nav-x ul a {
+ text-decoration: none;
+ color: grey;
+}
+
+@media all and (min-width: 768px) {
+    .nav-x {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer.x {-webkit-order:3;order:3;}
+}
+
+.badge{font-size: 11px; color:#D6EAF8}
+.badge:hover{cursor: default;}
+.list-group-item{
+  color:grey;
+  text-align:left; 
+  background: #f2f2f2; 
+  border: 1px solid #f2f2f2;
+  border-radius:0% !important;
+  font-family:'Avenir', 'light';
+}
+
+a {text-decoration: none;color: grey;}
+a:hover{color: grey}
+a.two{color: white}
+a.two:hover{color:lightgrey;}
+
+a.five{color: white !important; margin-left:-10px} /* dropdown_menu */
+a.five:hover{background: transparent !important; color: #C9D9D7 !important}
+a.dropdown-toggle{text-decoration: none; color:white;}
+a.dropdown-toggle:hover{color: lightgrey}
+a.title{text-decoration: none; color:#BBD0DD}
+
+.btn-default:hover{
+  box-shadow: 0 0 0 white;
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  transition: background .1s, border .1s;
+}
+i.material-icons{margin-top: -3px}
+
+</style>
+</head>
+
+<!-- ________________________________________________________________________________________________________________________________________________
+         
+                                                                                 Body
+
+_________________________________________________________________________________________________________________________________________________ -->
+
+<body style="background:#F8F9F9">
+
+<!-- Navbar One -->
+<nav class="navbar navbar-one" style="font-family: 'Avenir', 'light'; font-size:13px; padding:0px; margin-top:-10px; margin-bottom:-10px">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <a class="navbar-brand" href="../../HRTDB/index.html">hilix</a>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left" style="margin-top:1px">
+        <li class="dropdown">
+          <div style="margin: 18px 15px 14px 15px">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course Tracks <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="width:1070.9%; background: #ADC3E0; opacity: .9; border: 1px solid #ADC3E0; border-right:none; margin-top:-8px; border-radius:0%">
+            <li>
+              <div class="jumbotron" style="background: #ADC3E0; opacity: .9; color:white; font-size:13px">
+                <div class="row" style="padding-left:30px">
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Pure Mathematics</h5>
+                    Introduction to analysis
+                    <br>
+                    Differential equations
+                    <br>
+                    Linear algebra
+                    <br>
+                    Multvariable calculus
+                    <br>
+                    Abstract algebra
+                    <br>
+                    Elementary topology
+                    <br>
+                    Real analysis
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Applied Mathematics</h5>
+                    Calculus
+                    <br>
+                    Differential equations
+                    <br>
+                    Linear algebra
+                    <br>
+                    Multvariable calculus
+                    <br>
+                    Abstract algebra
+                    <br>
+                    Mathematical statistics
+                    <br>
+                    Numerical analysis
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Bioinformatics</h5>
+                    Calculus
+                    <br>
+                    CS probability
+                    <br>
+                    Structure and reactivity
+                    <br>
+                    Genetics
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Mechanics
+                    <br>
+                    Programming methodology
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12" style="margin-bottom:20px">
+                    <h5>Computer Engineering</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    CS probability
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    Programming languages 
+                    <br>
+                    Operating systems
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Computational Theory</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL Theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Mathematics</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    OperatingsSystems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL Theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Computer Science</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-6 colxs-12">
+                    <h5>Master of Science in Computer Science</h5>
+                    Calculus
+                    <br>
+                    Foundations of computing
+                    <br>
+                    Operating systems
+                    <br>
+                    Mechanics
+                    <br>
+                    Electricity and magnetism
+                    <br>
+                    PL theory and applications
+                    <br>
+                    Algorithms and data structures.
+                  </div>
+
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+        </li>
+      </ul>
+      <!-- Search_bar -->
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" name="search" placeholder="Search..." style="border-radius:0%; background:#f2f2f2; background-image: url('search.png'); background-repeat: no-repeat;">
+        </div>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <i class="fa fa-bar-chart" aria-hidden="true" style="padding-top:20px; font-size:14px; color:white"></i>
+        </li>
+        
+        <li class="dropdown" style="margin-top:1px">
+          <div style="padding-top:17px">
+            <a href="#" class="dropdown-toggle two" data-toggle="dropdown" 
+              role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons" aria-hidden="true" style="margin-top:-1px; font-size:19px; padding-left:10px; padding-right:5px">apps</i>
+            </a>
+          <ul class="dropdown-menu" 
+                    style="margin-top:2px; font-size:13px; border-radius:0%; background:linear-gradient(lightgrey, grey); margin-right:-15px;
+                    border: none; padding:25px">
+                    <div align="center"><img src="Images/stel_icoso.png" style="padding-left:15px"> 
+                        <br> 
+                        <h5 style="color:white; padding-left:15px">hILIXRT</h5>
+                        <a class="five" href="" style="font-size:14px; padding-left:24px">@hilixrt</a> 
+                        <span style="color:white; padding-left:0px"></span> <a class="five" href="" style="font-size:12px; padding-left:15px; color:#C9D9D7 !important">SIGNOUT</a>
+                    </div>
+                    <br>
+                    <li role="separator" class="divider"></li>
+                    <br>
+                    <li><a class="five" href="../../Dashboard/index.html">Hilix Admin</a></li>
+                    <li><a class="five" href="#">My Portfolio</a></li>
+                    <li><a class="five" href="http://localhost:8888/Hilix/HD/database.php">Hilix Datatbase</a></li>
+                    <li><a class="five" href="http://localhost:8888/Hilix/Profile/mathematics.php#">Account settings</a></li>
+                    <br>
+                    <li role="separator" class="divider"></li>
+                    <br>
+                    <li><a class="five" href="#">Manage storage space</a></li>
+                    <br>
+                </ul>
+            </div>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<!-- Navbar two -->
+<nav class="navbar navbar-inverse" style="font-family: 'Avenir', 'light'; font-size:13px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+      <p>
+        <h2 style="font-family:'Open Sans', 'sans-serif'; float:left; padding-left:10px; margin-left:45px; padding-bottom:2px; cursor:default">
+          <a class="title" href="../../HRTDB/index.html"><i class="fa fa-database" aria-hidden="true"></i> hilix</a> 
+          <span style="color:#9d9d9d; font-size:15px">MATHEMATICS</span>
+        <h2>
+      </p>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Navbar Three -->
+<table class="style2">
+    <tr>
+        <td>
+          <a class="one" style="margin-right: 10px">Mathematics</a>
+          <a class="one" style="margin-right:10px">Applied Mathematics</a>
+          <a class="one" style="margin-right:30px">Statistics</a>
+          <span class="glyphicon glyphicon-triangle-left" style="color:#9d9d9d"></span>
+          <a class="one" href="http://localhost:8888/Hilix/HD/algebra.php" style="margin-left:10px">Algebra</a>
+          <a class="one" style="margin-left:10px">Analysis</a>
+          <a class="one" style="margin-left:10px">Combinatorics</a>
+          <a class="one" href="http://localhost:8888/Hilix/HD/california.php" style="margin-left:10px">Geometry</a>
+          <a class="one" style="margin-left:10px">Mathematical Logic</a>
+          <a class="one" style="margin-left:10px"><span class="glyphicon glyphicon-triangle-right"></span></a>
+          <a class="one" style="margin-left:30px">Physics</a>
+          <a class="one" style="margin-left:10px">Computer Science</a>
+          <a class="one" style="margin-left:10px">Linguistic theory</a>
+        </td>
+    </tr>
+</table>
+
+<!-- Bio Frame -->
+<div>
+<table style="width:100%; border-top:solid 1px lightgrey;">
+<tr>
+    <td height="176" 
+        style=  "background-image:url(Images/1.jpg);
+            background-repeat:no-repeat;">
+    
+    <div class="media-default">
+    <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="Images/HRTP_pic.png" alt="...">
+    </a>
+    </div>
+    <div class="media-body" style="font-family: 'Avenir', 'light'; color: white;">
+        <div style="padding:35px 0 0 10px">
+            <!-- <div class="shortbio"></div> EDIT SCREEN -->
+            <span style="font-size: 20px;">Luqman Malik,</span> CEO at Hilix Research 
+        </div>
+            <p style="padding:10px 0 0 10px">
+            General interests: algebra, logic
+            <br>
+            Special Interests: model theory, set theory, 
+            </p>
+            <p style="font-size:13px; color: white; padding-left:10px">
+              Berkeley, California <span style="border-right: 1px solid white; padding-left: 3px"></span> &#160 NR 2.1 Mathematical sciences.
+            </p>
+    </div>
+    </div>
+    </td>
+</tr>
+</table>
+
+<!-- Fourth Navbar | not nav_object -->
+<table class="style1">
+    <tr>
+        <td class="style1">
+          <a class="one" style="color:#9d9d9d; border-bottom:2px solid lightgrey; padding-bottom:17px; margin-left:30px">Portfolio</a>
+          <a class="one">Statistics</a>
+          <a class="one">Software</a>
+          <a class="one">Contact</a>
+        </td>
+    </tr>
+</table>
+
+<!--___________________________________________________________ Achievement Layout ______________________________________________________ -->
+
+<div class="flex-container" style="width:98%; padding-left:25px;">
+<header class="x">
+  <h5> <span style="color:grey; padding-left:20px">Course track &#160</span> Master of Science &#160 <span style="border-right:1px solid white; margin-right:10px"></span> Mathematical Sciences</span></h5>
+</header>
+
+<nav class="nav-x" style="margin-left:0px; border-left: 1px solid #dadada; background: #F5F8F9">
+  <ul>
+    <br>
+      <li style="color:grey; font-size:12px">ENDORSEMENTS</li>
+    <br>
+      <li>
+        <table style="color:grey; width:70%">
+
+          <tr>
+            <td>
+              Computer Algebra Systems 
+            </td> 
+            <td style="font-size:12px;">
+              73 &#160&#160&#160&#160&#160
+            </td>
+          </tr> 
+
+          <tr>
+            <td>
+              Mathematical Logic
+            </td> 
+            <td style="font-size:12px">
+              50
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Haskell
+            </td> 
+            <td style="font-size:12px">
+              70
+            </td>
+          </tr>  
+
+          <tr>
+            <td>
+              C++
+            </td> 
+            <td style="font-size:12px">
+              45 
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Automated Theorem Proving
+            </td> 
+            <td style="font-size:12px">
+              67
+            </td>
+          </tr> 
+        </table>
+  </ul>
+</nav>
+
+<article class="article" style="padding-left: 30px; border-right: 1px solid #dadada">
+  
+  <br>
+
+  <span style="margin-left:10px; font-size:12px; margin-top:-1px">PUBLICATIONS</span>
+
+  <br>
+  <br>
+<table style="width:60%; margin-left:10px">
+  <tr>
+    <td><a class="one" href="https://arxiv.org/archive/math">Jstor</a></td> <td><a class="one" href="#">pdf</a></td>
+    <td style="padding-left:5px">On Algorithmic P-Set Verification for JQuery&ndash;AJAX API Requests</td>
+  </tr>
+  <tr>
+    <td><a class="one" href="https://arxiv.org/archive/math">arXiv</a></td> <td><a class="one" href="#">pdf</a></td>
+    <td style="padding-left:5px">
+      On Generic Multiverses and Extenders in <i style="font-family:'Times'">n</i>&ndash;dementional <span style="font-family:'Times'">&Omega;</span>&ndash;Logic</span> 
+    </td>
+  </tr>
+  <tr>
+    <td><a class="one" href="https://arxiv.org/archive/math">arXiv</a></td> <td><a class="one" href="#">pdf</a></td>
+    <td style="padding-left:5px">Borel Point&ndash;Classes and a Proof of Projective Determinancy</td>
+  </tr>
+  <tr>
+    <td><a class="one" href="https://arxiv.org/archive/math">arXiv</a></td> <td><a class="one" href="#">pdf</a></td>
+    <td style="padding-left:5px">Cylindrical Algebraic Decomposition for Hilix Shasta</td>
+  </tr>
+  <tr>
+    <td><a class="one" href="https://arxiv.org/archive/math">arXiv</a></td> <td><a class="one" href="#">pdf</a></td>
+    <td style="padding-left:5px">Quantifier Ellimination for Hilix Shasta, and SageMath</td>
+  </tr>
+</table>
+
+    <br>
+
+    <br>
+
+    &#160
+
+</article>
+
+<footer class="x"><h5> <span style="color:grey; padding-left:20px;">Previous course tracks &#160</span> Bachelor of Science &#160 <span style="border-right:1px solid white; margin-right:10px"></span>Mathematics</h5></footer>
+</div>
+
+
+<br><br>
+<br><br>
+
+<!-- ____________________________________________________________________ Footer ____________________________________________________________ -->
+
+<footer style="font-size:13px">
+    <div class="navbar navbar-inverse navbar-bottom" style="border:none">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="footer-body">
+                <ul class="nav navbar-nav" style="list-style-type:none; padding-bottom:50px">
+                    
+                    <li>
+                    <h5 style="margin-top:40px; margin-left:450px; color: #a9a9a9">&#160
+                    </h5>
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                        <span class="badge" style="color:grey">170 | 170</span>Finite model theory
+                      </li>
+                    </ul>
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                          <span class="badge" style="color:grey">234 | 240</span>sigma algebras
+                      </li>
+                    </ul> 
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                          <span class="badge" style="color:grey">234 | 240</span>homeomorphic rings
+                      </li>
+                    </ul> 
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                        <span class="badge" style="color:grey">234 | 240</span>fields
+                      </li>
+                    </ul> 
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                        <span class="badge" style="color:grey">234 | 240</span>Borel sets
+                      </li>
+                    </ul> 
+                   </li>
+
+                   <!-- Column 2 -->
+
+                    <li style="padding-left:200px">
+                    <h5 style="margin-top:40px; margin-left:450px; color: #a9a9a9">&#160
+                    </h5>
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                        <span class="badge" style="color:grey">170 | 170</span>Finite model theory
+                      </li>
+                    </ul>
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                          <span class="badge" style="color:grey">234 | 240</span>sigma algebras
+                      </li>
+                    </ul> 
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                          <span class="badge" style="color:grey">234 | 240</span>homeomorphic rings
+                      </li>
+                    </ul> 
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                        <span class="badge" style="color:grey">234 | 240</span>fields
+                      </li>
+                    </ul> 
+
+                    <ul class="list-group">
+                      <li class="list-group-item" 
+                          style="text-align:left; background: #f2f2f2; border: 1px solid #f2f2f2; color:grey">
+                        <span class="badge" style="color:grey">234 | 240</span>Borel sets
+                      </li>
+                    </ul> 
+                   </li>
+                </ul>
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- <div align="right" style=" font-size:10px; color: #a9a9a9; padding-right:4px; padding-top:20px">&copy;2016 Hilix, Inc.</div> -->
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ 
+<!-- Use downloaded version of Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
