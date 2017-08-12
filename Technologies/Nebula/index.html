@@ -17,34 +17,27 @@
 			a:hover{text-decoration: none; color:#303030;}
 			a.one{color: #889EA5}
 			a.one:hover{color: grey}
-			p.Logo{
+			a.support{
 			  color:grey;
 			  padding:10px 10px;
 			  font-family:'Open Sans', sans-serif;
 			  font-size:30px;
 			  position:fixed;
 			  bottom:10px;
-			  left:30px;
+			  right:30px;
 			  cursor: default;
 			}
+			a.support:hover{cursor: pointer; color: #aaa; transition: color .2s;}
 		</style>
 	</head>
 	<!-- **************************************************************************************************************************************************************************
 																	home/Technologies/Nebula/index.html
 	*************************************************************************************************************************************************************************** -->
-	<body style="font-family:'Avenir light'; background:linear-gradient(lightgrey, white)">
+	<body style="font-family:'Avenir light'">
 		<img src="Images/wht_mnt.jpg" style="position:fixed; left:50%">
-		<div style="background:#EAF5F5; opacity:0.6; padding:30px 100px 50px 100px; width:60%; position:absolute; left:263px;">
-			<div align="center" style="margin-left:250px">
-				<!-- root-relative link for GitHub: "/home/index.html" -->
-				<a style="padding:10px" href="../../index.html">Home</a> 
-				<a style="padding:10px" href="">Research</a> 
-				<a style="padding:10px" href="">Technologies</a>
-			</div>
-			<br>
-			<br>
+		<div style="background:#EAF5F5; opacity:0.6; padding:30px 100px 50px 50px; width:50%; position:absolute; left:0px;">
 			<p style="font-size:25px; font-family:'Open Sans'; color:grey">Nebula 1.0</p>
-			<p style="font-family:'Open Sans'; color:grey">A document evaluation system for typeset corpora in mathematics and computation</p>
+			<p style="font-size:14px; font-family:'Open Sans'; color:grey">A document evaluation system for corpora in mathematics and computation</p>
 			<br>
 			<table style="width:90%">
 				<tr>
@@ -108,7 +101,7 @@
 				</tr>
 				<tr>
 					<td style="padding:50px 0 0 0">
-						<img src="Images/UCD.png"> 
+						<img src="Images/STNFRD.png"> 
 					</td>
 					<td style="padding:50px 40px 0 0">
 						Mathematics
@@ -135,7 +128,7 @@
 				</tr>
 				<tr>
 					<td style="padding:50px 0 0 0">
-						<img src="Images/UCI.png"> 
+						<img src="Images/UNICAL.png"> 
 					</td>
 					<td style="padding:50px 40px 0 0">
 						Mathematics
@@ -163,7 +156,13 @@
 			</table>
 
 		</div>
+		<div align="right" style="position:fixed; top:50px; right:50px">
+				<!-- root-relative link for GitHub: "/home/index.html" -->
+				<a style="padding:10px" href="../../index.html">Home</a> 
+				<a style="padding:10px" href="">Research</a> 
+				<a style="padding:10px" href="">Technologies</a>
+			</div>
 		<!-- Page Title -->
-	    <p class="Logo"><text>Support</text></p>
+	    <a class="support" href="https://www.paypal.com/us/home">Support</a>
 	</body>
 </html>
