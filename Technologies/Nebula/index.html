@@ -21,146 +21,222 @@
 			  color:grey;
 			  padding:10px 10px;
 			  font-family:'Open Sans', sans-serif;
-			  font-size:30px;
+			  font-size:20px;
 			  position:fixed;
-			  bottom:10px;
-			  right:30px;
+			  top:100px;
+			  right:50px;
 			  cursor: default;
 			}
 			a.support:hover{cursor: pointer; color: #aaa; transition: color .2s;}
+			.button {
+			    background: linear-gradient(#f2f2f2, lightgrey);
+			    border: none;
+			    color: grey;
+			    margin: 2px 10px;
+			    width:100%;
+			    padding:2px 20px;
+			    text-align: left;
+			    text-decoration: none;
+			    display: inline-block;
+			    cursor: pointer;
+			}
+			.button_0 {
+			    background:linear-gradient(#f2f2f2, lightgrey);
+			    border:none;
+			    color:grey;
+			    margin:2px;
+			    width:100%;
+			    height:100%;
+			    padding:2px 0px 2px 10px;
+			    text-align:left;
+			    text-decoration: none;
+			    display:inline-block;
+			    cursor:pointer;
+			}
+			.button_1 {
+			    background:linear-gradient(#f2f2f2, lightgrey);
+			    border:none;
+			    color:grey;
+			    margin:2px;
+			    padding:2px 5px 2px 5px;
+			    text-align:center;
+			    text-decoration: none;
+			    display:inline-block;
+			    cursor:pointer;
+			}
 		</style>
 	</head>
 	<!-- **************************************************************************************************************************************************************************
 																	home/Technologies/Nebula/index.html
 	*************************************************************************************************************************************************************************** -->
-	<body style="font-family:'Avenir light'">
+	<body style="font-family:'Avenir light'; background:linear-gradient(white,#f2f2f2)">
 		<img src="Images/wht_mnt.jpg" style="position:fixed; left:50%">
-		<div style="background:#EAF5F5; opacity:0.6; padding:30px 100px 50px 50px; width:50%; position:absolute; left:0px;">
+		<div style="opacity:0.6; padding:30px 100px 50px 50px; width:50%; position:absolute; left:0px;">
 			<p style="font-size:25px; font-family:'Open Sans'; color:grey">Nebula 1.0</p>
 			<p style="font-size:14px; font-family:'Open Sans'; color:grey">A document evaluation system for corpora in mathematics and computation</p>
 			<br>
-			<table style="width:90%">
+			<table style="width:90%; color:grey; font-size:13px">
 				<tr>
-					<td><b>Module stacks</b></td>
+					<td>Module stacks</td>
 					<td>&nbsp;</td>
-					<td><b>Nebula ranks</b></td>
+					<td>Nebula ranks</td>
 				</tr>
 				<tr>
 					<td style="padding:20px 0 0 0">
-						<img src="Images/UCB.png"> 
+						<button class="button_0"><img src="Images/UCB.png"></button>
 					</td>
 					<td style="padding:20px 40px 0 0">
-						Mathematics
+						<button class="button">Mathematics</button>
 						<br>
-						Data science
+						<button class="button">Data science</button>
 						<br>
-						Informatics
+						<button class="button">Informatics</button>
 						<br>
-						Linguistics
+						<button class="button">Linguistics</button>
 						<br>
-						Physics
+						<button class="button">Physics</button>
 					</td>
 					<td style="padding:20px 0 0 0">
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 					</td>
 				</tr>
 				<tr>
-					<td style="padding:50px 0 0 0">
-						<img src="Images/UCLA2.png"> 
+					<td style="padding:15px 0 0 0">
+						<button class="button_0"><img src="Images/UCLA2.png"></button>
 					</td>
-					<td style="padding:50px 40px 0 0">
-						Applied statistics
+					<td style="padding:15px 40px 0 0">
+						<button class="button">Applied statistics</button>
 						<br>
-						Mathematics
+						<button class="button">Mathematics</button>
 						<br>
-						Informatics
+						<button class="button">Informatics</button>
 						<br>
-						Linguistics
+						<button class="button">Linguistics</button>
 						<br>
-						Physics
+						<button class="button">Physics</button>
 					</td>
-					<td style="padding:50px 0 0 0">
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+					<td style="padding:15px 0 0 0">
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
-					</td>
-				</tr>
-				<tr>
-					<td style="padding:50px 0 0 0">
-						<img src="Images/STNFRD.png"> 
-					</td>
-					<td style="padding:50px 40px 0 0">
-						Mathematics
-						<br>
-						Informatics
-						<br>
-						Linguistics
-						<br>
-						Statistics
-						<br>
-						Physics
-					</td>
-					<td style="padding:50px 0 0 0">
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
-						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
-						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
-						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
-						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 					</td>
 				</tr>
 				<tr>
-					<td style="padding:50px 0 0 0">
-						<img src="Images/UNICAL.png"> 
+					<td style="padding:15px 0 0 0">
+						<button class="button_0"><img src="Images/STNFRD.png"></button>
 					</td>
-					<td style="padding:50px 40px 0 0">
-						Mathematics
+					<td style="padding:15px 40px 0 0">
+						<button class="button">Mathematics</button>
 						<br>
-						Informatics
+						<button class="button">Data science</button>
 						<br>
-						Linguistics
+						<button class="button">Informatics</button>
 						<br>
-						Statistics
+						<button class="button">Linguistics</button>
 						<br>
-						Physics
+						<button class="button">Physics</button>
 					</td>
-					<td style="padding:50px 0 0 0">
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+					<td style="padding:15px 0 0 0">
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 						<br>
-						1.0 &nbsp;&nbsp;&nbsp;&nbsp; 2.0 &nbsp;&nbsp;&nbsp;&nbsp; 3.0
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding:15px 0 0 0">
+						<button class="button_0"><img src="Images/UNICAL.png"></button>
+					</td>
+					<td style="padding:15px 40px 0 0">
+						<button class="button">Mathematics</button>
+						<br>
+						<button class="button">Data science</button>
+						<br>
+						<button class="button">Informatics</button>
+						<br>
+						<button class="button">Linguistics</button>
+						<br>
+						<button class="button">Physics</button>
+					</td>
+					<td style="padding:15px 0 0 0">
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
+						<br>
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
+						<br>
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
+						<br>
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
+						<br>
+						<button class="button_1">1.0</button>
+						<button class="button_1">2.0</button>
+						<button class="button_1">3.0</button>
 					</td>
 				</tr>
 			</table>
 
 		</div>
-		<div align="right" style="position:fixed; top:50px; right:50px">
+		<div align="right" style="position:fixed; top:50px; right:50px;">
 				<!-- root-relative link for GitHub: "/home/index.html" -->
-				<a style="padding:10px" href="../../index.html">Home</a> 
-				<a style="padding:10px" href="">Research</a> 
-				<a style="padding:10px" href="">Technologies</a>
+				<a style="padding:10px; color:white; font-size:14px" href="../../index.html">Home</a> 
+				<a style="padding:10px; color:white; font-size:14px" href="">Research</a> 
+				<a style="padding:10px; color:white; font-size:14px" href="">Technologies</a>
 			</div>
 		<!-- Page Title -->
 	    <a class="support" href="https://www.paypal.com/us/home">Support</a>
