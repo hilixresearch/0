@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-
     <title>HLXRT &middot; Dashboard &middot; User Zero</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-
-
     <!-- Fonts -->
     <script src="https://use.fontawesome.com/5a20d27639.js"></script> <!-- FA -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"> <!-- Material Icons -->
-
 
     <!-- Google Charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -36,7 +28,6 @@
           ['Topology', 330, 660, 150],
           ['Logic', 800, 50, 375]
         ]);
-
         var options = {
             legend:{position:'none'},
             colors: ['#D5E0E7', '#D5E0E7', '#D5E0E7'],
@@ -45,9 +36,7 @@
             //     subtitle: 'Sales, Expenses, and Profit: 2014-2017',
             // }
         };
-
         var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
         chart.draw(data, options);
       }
     </script>
