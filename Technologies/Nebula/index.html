@@ -19,15 +19,19 @@
 			a.one:hover{color: grey}
 			a.support{
 			  color:grey;
+			  opacity:0.6;
 			  padding:10px 10px;
+			  background:#DDEAF0;
 			  font-family:'Open Sans', sans-serif;
-			  font-size:20px;
+			  font-size:30px;
 			  position:fixed;
-			  top:100px;
-			  right:50px;
+			  bottom:30px;
+			  right:20px;
 			  cursor: default;
 			}
 			a.support:hover{cursor: pointer; color: #aaa; transition: color .2s;}
+			a.head_links{padding:10px; color:grey; font-size:15px}
+			a.head_links:hover{color:#f2f2f2; transition: color .2s;}
 			.button {
 			    background: linear-gradient(#f2f2f2, lightgrey);
 			    border: none;
@@ -66,6 +70,24 @@
 			    cursor:pointer;
 			}
 			.button_1:hover{color:#aaa; transition: color .2s;}
+			.btn-login {
+				color: white;
+				font-size: 20px;
+				background-color: transparent;
+				border:none;
+				box-shadow: 0 0 0 white;
+				font-family: 'Avenir', 'light';
+				margin-top:-5px;
+				margin-left: 0px;
+				position:fixed; 
+				right:20px; top:25px;
+
+			}
+			.btn-login:hover {
+				color: #aaa;
+				box-shadow: 0 0 0 white;
+				transition: color .1s;
+			}
 		</style>
 	</head>
 	<!-- **************************************************************************************************************************************************************************
@@ -99,25 +121,33 @@
 						<button class="button">Physics</button>
 					</td>
 					<td style="padding:0 0 0 0" align="center">
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
+						<table>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+						</table>
 					</td>
 				</tr>
 				<tr>
@@ -136,25 +166,33 @@
 						<button class="button">Physics</button>
 					</td>
 					<td style="padding:0 0 0 0" align="center">
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
+						<table>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+						</table>
 					</td>
 				</tr>
 				<tr>
@@ -173,25 +211,33 @@
 						<button class="button">Physics</button>
 					</td>
 					<td style="padding:0 0 0 0" align="center">
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
+						<table>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+						</table>
 					</td>
 				</tr>
 				<tr>
@@ -210,37 +256,47 @@
 						<button class="button">Physics</button>
 					</td>
 					<td style="padding:0 0 0 0" align="center">
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
-						<br>
-						<button class="button_1">1.0</button>
-						<button class="button_1">2.0</button>
-						<button class="button_1">3.0</button>
+						<table>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+							<tr>
+								<td><button class="button_1">1.0</button></td>
+								<td><button class="button_1">2.0</button></td>
+								<td><button class="button_1">3.0</button></td>
+							</tr>
+						</table>
 					</td>
 				</tr>
 			</table>
 
 		</div>
-		<div align="right" style="position:fixed; top:50px; right:50px;">
-				<!-- root-relative link for GitHub: "/home/index.html" -->
-				<a style="padding:10px; color:white; font-size:14px" href="../../index.html">Home</a> 
-				<a style="padding:10px; color:white; font-size:14px" href="">Research</a> 
-				<a style="padding:10px; color:white; font-size:14px" href="">Technologies</a>
+		<!-- Login -->
+		<button id="libtn" class="btn-login"><i class="material-icons">ac_unit</i></button>
+		<!-- Root links -->
+		<div align="right" style="position:fixed; top:40px; right:28%">
+				<a class="head_links" href="../../index.html">Home</a> 
+				<a class="head_links" href="">Research</a> 
+				<a class="head_links" href="">Technologies</a>
 			</div>
 		<!-- Page Title -->
-	    <a class="support" href="https://www.paypal.com/us/home">Support</a>
+	    <a class="support" href="https://www.paypal.com/us/home">Support Nebula 1.0</a>
 	</body>
 </html>
