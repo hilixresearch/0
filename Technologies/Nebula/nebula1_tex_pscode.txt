@@ -1,0 +1,14 @@
+— Nebula 1.0
+import Prelude
+import Data.Char
+import Data.List
+import System.IO
+
+— Spell check for English text file
+create spellcheck.txt in cur_dir
+
+-- def srt_stck function
+wordlist = readFile “solution_set.txt" >>= (mapM_ putStrLn . sort . words)
+
+if string precede && succeed "
+	then move_to spellcheck.txt
