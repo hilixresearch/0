@@ -1,0 +1,108 @@
+–– Nebula 1.0 for English plain text files (EPTF)
+–– Copyright (MIT) 2017 | Luqman M.A. Malik, EXDIR – HLXRT, Inc.®
+
+–– Dependencies
+import Prelude
+import Data.Char
+import Data.List
+import System.IO
+
+–– Evaluation sequence
+run lexemes_determinant solutions.txt
+run syntax_determinant solutions.txt
+run semantics_determinant solutions.txt
+run nebula-score solutions.txt
+run nebula-rank solutions.txt
+
+							   Typeclasses / Monads / Monoids
+——————————————————————————————————————————————————————————————————————————————————————————
+
+–– Typeclasses: lexemes, phrases, clauses, sentences, punctuation …, n
+	–– lexemes
+		nouns = [n_1, n_2, …, n_m]
+		verbs = [v_1, v_2, …, v_w]
+		adverbs = [adv_1, adv_2, …, adv_c]
+		articles = [art_1, art_2, …, art_b]
+		pronouns = [pro_1, pro_2, …, pro_q]
+		adjectives = [adj_1, adj_2, …, adj_d]
+		prepositions = [pre_1, pre_2, …, pre_r]
+		…
+
+	–– phrases:
+		NP = [nouns, nouns, …, nouns]
+		VP = [verbs, verbs, …, verbs]
+		AuxP = [lexeme, lexeme, …, lexeme]
+		∑str = subj ∧ pred ∧ punct
+		∑str_α = subj ∧ pred_α ∧ punct
+		∑str_ß = subj ∧ pred_ß ∧ punct
+		∑str_γ = subj ∧ pred_γ ∧ punct
+
+	–– clauses:
+		ind_clause = indclause_signal ∧ AuxP
+		dep_clause = depclause_signal ∧ AuxP
+		subject = …
+		predicate = …
+		…
+
+	–– sentences:
+		command = ind_clause ∧ dep_clause ∧ punct
+		question = ind_clause ∧ dep_clause ∧ punct
+		statement = ind_clause ∧ dep_clause ∧ punct
+		exclamation = ind_clause ∧ dep_clause ∧ punct
+
+–– Typeclasses function definitions:
+	put_Cstr :: Cstr → IO ()
+	put_∑str :: ∑str → IO ()
+	put_CstrLn :: CstrLn → IO ()
+	put_∑strLn :: ∑strLn → IO ()
+	clauses :: Cstr → [Cstr]
+	sentence :: Text → [Text]
+		O(n) Breaks a Text into a list of word, delimited by 
+		period_char.
+
+–– Prefix operators
+	spsplit ∑str :: subj ∧ pred :: T or F
+
+							       Grammartological functions
+——————————————————————————————————————————————————————————————————————————————————————————
+
+lexemes_determinant =
+	–– sortnstack lexemes: trnsfrm[(m⋅n ∑-matrix) → det(w/l ω-matrix)]
+	srtstk_ω = readFile "solutions.txt" >>= (mapM_ putStrLn . sort . words)
+	–– check line in dictionary
+	jump_to L1(output)
+	if this.line ∈ l_dictionary
+		then next_line ||: Predicate(this.line-1)
+	else print “Nebula-rank: null” ∧ terminate
+end lexemes_determinant
+
+syntax_determinant =
+	–– ordernstack sentences: trnsfrm[(m⋅n ∑-matrix) → det(s/l ∑-matrix)]
+	ordstk_∑ = readFile "solutions.txt" >>= (mapM_ put_∑strLn . order . sentences)
+	–– check line for syntax value
+	jump_to L1(output)
+	parse line =
+		if spsplit this.line == T
+			if well_construct(subject, predicate)
+				then next_line ||: Predicate(this.line-2)
+			else return “Nebula-rank: null” ∧ terminate
+		else return “Nebula-rank: null” ∧ terminate
+	end parsing
+end syntax_determinant
+
+semantics_determinant =
+	–– order and stack sentences: evaluate[(m⋅n ∫-matrix) → det(∫-matrix)]
+	ordstk_∫ = readFile "solutions.txt" >>= (mapM_ put_∫trLn . order . sentences)
+	–– check line for syntactical validity
+	jump_to L1(output)
+	–– Excludes unilexemic sentences
+	parse_thissentence =
+		if this.line splittable ind_clause|dep_clause
+			then next_line ||: predicate
+			else return “Nebula-rank: null”
+		end parse_thissentence
+	jump_to L1(output)
+	splitsentence =
+end semantics_determinant
+
+
