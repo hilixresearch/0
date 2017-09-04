@@ -1,5 +1,8 @@
-–– Nebula 1.0 for English plain text files (EPTF)
-–– Copyright (MIT) 2017 | Luqman M.A. Malik, EXDIR – HLXRT, Inc.®
+–– Nebula 1.0™ for English plain-text format (EPTF)
+–– Copyright (HLXRT) 2017 | Luqman M.A. Malik, EXDIR – Hilix Reseaerch and Technologies, Inc., Berkeley, California U.S.A.
+
+										  Prelude
+——————————————————————————————————————————————————————————————————————————————————————————
 
 –– Dependencies
 import Prelude
