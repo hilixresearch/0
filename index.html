@@ -20,338 +20,448 @@
   <!-- Grey Waves: <a href="http://www.freepik.com/free-vector/modern-background-with-wavy-shapes_927328.htm">Designed by Freepik</a> -->
   <!-- Source: Fiona Struengmann | Series: Articulated Silence — White Mountain 2012: http://www.fionastruengmann.com/pictures/ -->
 
-  <body style="text-align:center">
+  <body style="background:#f1f1f1">
+    <div style="height:734px; background:linear-gradient(#f9f9f9, #f1f1f1)">
+      <!-- Background -->
+      <img src="Images/grey_fluid.png" style="position:fixed; top:50px; left:0px">
+      <img src="Images/wht_mnt.jpg" style="position:fixed; top:0px; left:640px"> 
+      
 
-    <!-- Background -->
-    <img src="Images/grey_fluid.png" style="position:fixed; top:45px; left:0px">
-    <img src="Images/wht_mnt.jpg" style="position:fixed; top:0px; left:640px"> 
-    
+      <!-- Filter -->
+      <hr class="style-two">
 
-    <!-- Filter -->
-    <hr class="style-two">
+      <!-- Menue 
+      <div style="position:fixed; left:19%; top:5%; font-family:'Open Sans'; font-size: 30px; color:#aaa">
+        <a class="Gnutrino" href="Research/eta_index.pdf">Research</a>
+      </div>
+      <div style="position:fixed; right:17.5%; top:5%; font-family:'Open Sans'; font-size: 30px; color:white">
+        <a class="Quasar" href="Technologies/Nebula/index.html">Technologies</a>
+      </div>-->
 
-    <!-- Menue 
-    <div style="position:fixed; left:19%; top:5%; font-family:'Open Sans'; font-size: 30px; color:#aaa">
-      <a class="Gnutrino" href="Research/eta_index.pdf">Research</a>
-    </div>
-    <div style="position:fixed; right:17.5%; top:5%; font-family:'Open Sans'; font-size: 30px; color:white">
-      <a class="Quasar" href="Technologies/Nebula/index.html">Technologies</a>
-    </div>-->
+      <!-- Center trapazoid -->
+      <div style="position:fixed; top:120px; width:100%; height:430px; background: #EAF5F5; opacity:.3"></div>
 
-    <!-- Center trapazoid -->
-    <div style="position:fixed; top:120px; width:100%; height:430px; background: #EAF5F5; opacity:.3"></div>
-
-    <!-- Blackwell quote -->
-    <p class="Blackwell">
-      <canvas id="myCanvas" width="200" height="500"></canvas>
-      <script>
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        // Create gradient
-        var grd = ctx.createLinearGradient(0,0,200,0);
-        grd.addColorStop(0,"#f2f2f2");
-        grd.addColorStop(1,"#aaa");
-        // Fill with gradient
-        ctx.fillStyle = grd;
-        ctx.fillRect(10,10,150,80);
-      </script>
-    </p>
-    <p class="Blackwelle">
-      <canvas id="myCanvase" width="200" height="500"></canvas>
-      <script>
-        var c = document.getElementById("myCanvase");
-        var ctx = c.getContext("2d");
-        // Create gradient
-        var grd = ctx.createLinearGradient(0,0,200,0);
-        grd.addColorStop(0,"#f2f2f2");
-        grd.addColorStop(1,"#aaa");
-        // Fill with gradient
-        ctx.fillStyle = grd;
-        ctx.fillRect(10,10,150,80);
-      </script>
-    </p>
-
-    <!-- Login -->
-    <!-- Trigger / Open The Modal -->
-    <button id="libtn" class="btn-login"><i class="material-icons">ac_unit</i></button>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-      <p style="color:white; font-family: 'Open Sans', sans-serif; font-size:53px"><i class="fa fa-database" aria-hidden="true"></i> HLXRT</p>
-
-      <p style="color:white; font-family:'Avenir', 'light'; margin-left:23px; cursor:default">LOGIN 
-        <span STYLE="margin-left:60px"><a href="">SIGNUP</a>
-        </span>
-        <span class="glyphicon glyphicon-triangle-top" style="position:relative; top:20px; right:164px"></span>
+      <!-- Blackwell quote -->
+      <p class="Blackwell">
+        <canvas id="myCanvas" width="200" height="500"></canvas>
+        <script>
+          var c = document.getElementById("myCanvas");
+          var ctx = c.getContext("2d");
+          // Create gradient
+          var grd = ctx.createLinearGradient(0,0,200,0);
+          grd.addColorStop(0,"#f2f2f2");
+          grd.addColorStop(1,"#aaa");
+          // Fill with gradient
+          ctx.fillStyle = grd;
+          ctx.fillRect(10,10,150,80);
+        </script>
+      </p>
+      <p class="Blackwelle">
+        <canvas id="myCanvase" width="200" height="500"></canvas>
+        <script>
+          var c = document.getElementById("myCanvase");
+          var ctx = c.getContext("2d");
+          // Create gradient
+          var grd = ctx.createLinearGradient(0,0,200,0);
+          grd.addColorStop(0,"#f2f2f2");
+          grd.addColorStop(1,"#aaa");
+          // Fill with gradient
+          ctx.fillStyle = grd;
+          ctx.fillRect(10,10,150,80);
+        </script>
       </p>
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close" style="font-weight:normal">x</span>
-        <p>
-          <div class="container">
-            <div class="main">
-              <form id="form_id" method="post" name="myform">
-                <!-- Username -->
-                <input  type="text" name="username" id="username" placeholder="Email address">
-                  <!-- Password reset -->
-                  <div style="font-size:12px; margin-top: 20px; padding-right:110px">Password Reset ?</div>
-                <!--  Password -->
-                <input type="password" name="password" id="password" placeholder="Password">
-                  <div  align="left" style="margin:0 0 0 65px;">
-                    <!-- Remember me -->
-                    <label  class="checkbox" style="font-size:12px; font-weight:normal; width:20%">
-                      <input type="checkbox" value="remember-me" id="remember_me"> Remember me on this computer
-                    </label>
-                  </div>
-                <!-- Login -->
-                <div style="margin-top:-50px">
-                  <input type="button" value="Login" id="submit" onclick="validate()"/>
-                </div>
-              </form>
-            </div>
-          </div>
-        </p>
-      </div>
-    </div>
-
-    <!-- ______________________________ JS ____________________________ -->
-    <script>
-      // Get the modal
-      var modal = document.getElementById('myModal');
-
-      // Get the button that opens the modal
-      var btn = document.getElementById("libtn");
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks the button, open the modal
-      btn.onclick = function() {
-          modal.style.display = "block";
-      }
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-          modal.style.display = "none";
-      }
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      }
-    </script>
-
-    <!-- remember me __________________________________________________-->
-   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-          <script>
-              $(function() {
-   
-                  if (localStorage.chkbx && localStorage.chkbx != '') {
-                      $('#remember_me').attr('checked', 'checked');
-                      $('#username').val(localStorage.usrname);
-                      $('#pass').val(localStorage.pass);
-                  } else {
-                      $('#remember_me').removeAttr('checked');
-                      $('#username').val('');
-                      $('#pass').val('');
-                  }
-   
-                  $('#remember_me').click(function() {
-   
-                      if ($('#remember_me').is(':checked')) {
-                          // save username and password
-                          localStorage.usrname = $('#username').val();
-                          localStorage.pass = $('#pass').val();
-                          localStorage.chkbx = $('#remember_me').val();
-                      } else {
-                          localStorage.usrname = '';
-                          localStorage.pass = '';
-                          localStorage.chkbx = '';
-                      }
-                  });
-              });
-          </script>
-
-    <!-- ____________________ Login_script _____________________________ -->
-    <script type="text/javascript">
-      // Below function Executes on click of login button.
-      function validate(){
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        if ( username == " " && password == " "){
-          window.location = "Dashboard/index.html"; // redirect to dashboard
-        return false;
-        }
-        else{
-          alert("Invalid username or password.");
-        }
-      }
-    </script>
-
-    <!-- Title links -->
-    <div class="slideshow-container">
-      <div class="mySlides">
-        <table align="center">
-          <tr>
-            <td class="research">
-              <a class="Gnutrino" onclick="currentSlide(2)">Research</a>
-            </td>
-            <td class="technologies">
-              <a class="Quasar" onclick="currentSlide(3)">Technologies</a>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="mySlides">
-        <table align="center">
-          <tr>
-            <td class="t_research">
-              <a class="Gnutrino">Theoretical research</a>
-              <div style="background:linear-gradient(lightgrey, #f2f2f2); opacity:.9; margin:90px 0 0 0; padding:70px">
-                <table style="text-align:left; margin:20px 20px; width:100%; color:white">
-                  <tr>
-                    <td>
-                      <a class="mathematics" href="Research/eta_index.pdf">Mathematics</a>
-                    </td>
-                    <td style="padding:0 0 0 40px">
-                      <a class="mathematics">Statiatics</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a class="mathematics">Informatics</a>
-                    </td>
-                    <td style="padding:0 0 0 40px">
-                      <a class="mathematics">Logic</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a class="mathematics">Physics</a>
-                    </td>
-                    <td style="padding:0 0 0 40px">
-                      <a class="mathematics">Linguistics</a>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-            <td class="a_research">
-              <a class="Quasar">Applied research</a>
-              <div style="background:linear-gradient(lightgrey, #f2f2f2); opacity:1; margin:90px 0 0 0; padding:70px">
-                <table style="text-align:left; margin:20px 20px; width:100%; color:white">
-                  <tr>
-                    <td>
-                      <a class="mathematics" href="Research/eta_index.pdf">Econometrics</a>
-                    </td>
-                    <td style="padding:0 0 0 10px">
-                      <a class="mathematics">Linguistics</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a class="mathematics">Computing</a>
-                    </td>
-                    <td style="padding:0 0 0 10px">
-                      <a class="mathematics">Cognition</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a class="mathematics">Physics</a>
-                    </td>
-                    <td style="padding:0 0 0 10px">
-                      <a class="mathematics">Mathematics</a>
-                    </td>
-                  </tr>
-                </table>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="mySlides">
-        <table align="center">
-          <tr>
-            <td class="t_research">
-              <a class="Gnutrino">Nebula 1.0</a>
-              <div style="background:linear-gradient(lightgrey, #f2f2f2); opacity:.9; margin:90px 0 0 0; padding:50px 90px 50px 90px">
-                <table style="text-align:left; margin:20px 20px; width:100%; color:white">
-                  <tr>
-                    <td>
-                      <a class="mathematics">Download Nebula 1.0</a>
-                      <br>
-                      <a class="mathematics">Documentation</a>
-                      <br>
-                      <a class="mathematics" href="Technologies/Nebula/index.html">Modules</a>
-                      <br>
-                      <a class="mathematics">Donate</a>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-            <td class="a_research">
-              <a class="Quasar">Operating systems &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-              <div style="background:linear-gradient(lightgrey, #f2f2f2); opacity:1; margin:90px 10px 0 0; padding:100px 118px 100px 118px">
-                <table style="text-align:left; margin:20px 20px; width:100%; color:white; font-size:50px">
-                  <tr>
-                    <td>
-                      <a class="mathematics" href="#">Nutrino OS</a>
-                    </td>
-                  </tr>
-                </table>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div style="position:absolute; bottom:5px; left:46%">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
+      <!-- Login -->
+      <!-- Trigger / Open The Modal -->
+      <button id="libtn" class="btn-login">
         
-    <!-- JS -->
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
+      </button>
 
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
 
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
+        <p style="color:white; font-family: 'Open Sans', sans-serif; font-size:53px; letter-spacing:-4px"><i class="fa fa-database" aria-hidden="true"></i> &Hfr;LXRT <sup>&reg;</sup></p>
 
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+        <p style="color:white; font-family:'Avenir', 'light'; margin-left:23px; cursor:default">LOGIN 
+          <span STYLE="margin-left:60px"><a href="">SIGNUP</a>
+          </span>
+          <span class="glyphicon glyphicon-triangle-top" style="position:relative; top:20px; right:164px"></span>
+        </p>
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" style="font-weight:normal">x</span>
+          <p>
+            <div class="container">
+              <div class="main">
+                <form id="form_id" method="post" name="myform">
+                  <!-- Username -->
+                  <input  type="text" name="username" id="username" placeholder="Email address">
+                    <!-- Password reset -->
+                    <div style="font-size:12px; margin-top: 20px; padding-right:110px">Password Reset ?</div>
+                  <!--  Password -->
+                  <input type="password" name="password" id="password" placeholder="Password">
+                    <div  align="left" style="margin:0 0 0 65px;">
+                      <!-- Remember me -->
+                      <label  class="checkbox" style="font-size:12px; font-weight:normal; width:20%">
+                        <input type="checkbox" value="remember-me" id="remember_me"> Remember me on this computer
+                      </label>
+                    </div>
+                  <!-- Login -->
+                  <div style="margin-top:-50px">
+                    <input type="button" value="Login" id="submit" onclick="validate()"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+
+      <!-- ______________________________ JS ____________________________ -->
+      <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("libtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
         }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
         }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-    </script>
 
-    <!-- Page Title -->
-    <p class="Logo">HILIX <span style="font-size:16px; letter-spacing:1px; color:grey; padding-left:0px">Research and Technologies</span></p>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+      </script>
 
-    <!-- Bootstrap links -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+      <!-- remember me __________________________________________________-->
+     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+            <script>
+                $(function() {
+     
+                    if (localStorage.chkbx && localStorage.chkbx != '') {
+                        $('#remember_me').attr('checked', 'checked');
+                        $('#username').val(localStorage.usrname);
+                        $('#pass').val(localStorage.pass);
+                    } else {
+                        $('#remember_me').removeAttr('checked');
+                        $('#username').val('');
+                        $('#pass').val('');
+                    }
+     
+                    $('#remember_me').click(function() {
+     
+                        if ($('#remember_me').is(':checked')) {
+                            // save username and password
+                            localStorage.usrname = $('#username').val();
+                            localStorage.pass = $('#pass').val();
+                            localStorage.chkbx = $('#remember_me').val();
+                        } else {
+                            localStorage.usrname = '';
+                            localStorage.pass = '';
+                            localStorage.chkbx = '';
+                        }
+                    });
+                });
+            </script>
+
+      <!-- ____________________ Login_script _____________________________ -->
+      <script type="text/javascript">
+        // Below function Executes on click of login button.
+        function validate(){
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          if ( username == " " && password == " "){
+            window.location = "Dashboard/index.html"; // redirect to dashboard
+          return false;
+          }
+          else{
+            alert("Invalid username or password.");
+          }
+        }
+      </script>
+
+      <!-- Title links -->
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <table align="center" style="position:fixed;top:10.1%;left:13%">
+            <tr>
+              <td class="research">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="PRODUCTS">PRODUCTS &#9662;</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">QuasR</a>
+                      <a href="#about">Nebula</a>
+                      <a href="#contact">GNUtrino</a>
+                      <a href="#contact">IMSCINDX</a>
+                    </div>
+                  </div>
+                  <script>
+                  /* When the user clicks on the button, 
+                  toggle between hiding and showing the dropdown content */
+                  function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                  }
+
+                  // Close the dropdown if the user clicks outside of it
+                  window.onclick = function(event) {
+                    if (!event.target.matches('.products')) {
+
+                      var dropdowns = document.getElementsByClassName("dropdown-content");
+                      var i;
+                      for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
+                        }
+                      }
+                    }
+                  }
+                  </script>
+                <!-- <a class="Gnutrino" onclick="currentSlide(2)">PRODUCTS &#9662;</a>
+                <a class="Gnutrino" onclick="currentSlide(2)">ICO &#9662;</a>
+                <a class="Gnutrino" onclick="currentSlide(2)">WHT PAGES &#9662;</a> -->
+              </td>
+              <td class="research">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="PRODUCTS">
+                    ICO &#9662;
+                  </button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">Tokensale</a>
+                      <a href="#about">HLX RT model</a>
+                    </div>
+                  </div>
+                  <script>
+                  /* When the user clicks on the button, 
+                  toggle between hiding and showing the dropdown content */
+                  function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                  }
+
+                  // Close the dropdown if the user clicks outside of it
+                  window.onclick = function(event) {
+                    if (!event.target.matches('.products')) {
+
+                      var dropdowns = document.getElementsByClassName("dropdown-content");
+                      var i;
+                      for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
+                        }
+                      }
+                    }
+                  }
+                  </script>
+              </td>
+              <td class="research">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="PRODUCTS">
+                    PARTNERSHIPS &#9662;
+                  </button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">IMU</a>
+                      <a href="#about">MSRI</a>
+                      <a href="#contact">AIMS</a>
+                      <a href="#contact">Apple</a>
+                      <a href="#contact">Github</a>
+                      <a href="#contact">Polychain Capital</a>
+                      <a href="#contact">Blockchain at Berkeley</a>
+                    </div>
+                  </div>
+                  <script>
+                  /* When the user clicks on the button, 
+                  toggle between hiding and showing the dropdown content */
+                  function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                  }
+
+                  // Close the dropdown if the user clicks outside of it
+                  window.onclick = function(event) {
+                    if (!event.target.matches('.products')) {
+
+                      var dropdowns = document.getElementsByClassName("dropdown-content");
+                      var i;
+                      for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
+                        }
+                      }
+                    }
+                  }
+                  </script>
+              </td>
+              <td class="technologies">
+                <a class="Quasar" onclick="currentSlide(3)">
+                  <i class="fa fa-database"></i> &Hfr;LXRT
+                </a>
+              </td>
+              <td class="technologies0">
+                <div style="height:1px; width:500px; background:linear-gradient(to right, white, #f1f1f1); "></div>
+                <div style="margin-top:2.5px; height:10px; width:180px; background:linear-gradient(to right, white, #f1f1f1)"></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="mySlides">
+          <table align="center">
+            <tr>
+              <td class="t_research">
+                <a class="Gnutrino">Theoretical research</a>
+                <div style="background:linear-gradient(lightgrey, #f2f2f2); opacity:.9; margin:90px 0 0 0; padding:70px">
+                  <table style="text-align:left; margin:20px 20px; width:100%; color:white">
+                    <tr>
+                      <td>
+                        <a class="mathematics" href="Research/eta_index.pdf">Mathematics</a>
+                      </td>
+                      <td style="padding:0 0 0 40px">
+                        <a class="mathematics">Statiatics</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="mathematics">Informatics</a>
+                      </td>
+                      <td style="padding:0 0 0 40px">
+                        <a class="mathematics">Logic</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="mathematics">Physics</a>
+                      </td>
+                      <td style="padding:0 0 0 40px">
+                        <a class="mathematics">Linguistics</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td class="a_research">
+                <a class="Quasar">Applied research</a>
+                <div style="background:linear-gradient(lightgrey, #f2f2f2); opacity:1; margin:90px 0 0 0; padding:70px">
+                  <table style="text-align:left; margin:20px 20px; width:100%; color:white">
+                    <tr>
+                      <td>
+                        <a class="mathematics" href="Research/eta_index.pdf">Econometrics</a>
+                      </td>
+                      <td style="padding:0 0 0 10px">
+                        <a class="mathematics">Linguistics</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="mathematics">Computing</a>
+                      </td>
+                      <td style="padding:0 0 0 10px">
+                        <a class="mathematics">Cognition</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="mathematics">Physics</a>
+                      </td>
+                      <td style="padding:0 0 0 10px">
+                        <a class="mathematics">Mathematics</a>
+                      </td>
+                    </tr>
+                  </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="mySlides">
+          <table align="center">
+            <tr>
+              <td class="t_research">
+                <a class="Gnutrino">Nebula 1.0</a>
+                <div style="background:linear-gradient(lightgrey, #f2f2f2); opacity:.9; margin:90px 0 0 0; padding:50px 90px 50px 90px">
+                  <table style="text-align:left; margin:20px 20px; width:100%; color:white">
+                    <tr>
+                      <td>
+                        <a class="mathematics">Download Nebula 1.0</a>
+                        <br>
+                        <a class="mathematics">Documentation</a>
+                        <br>
+                        <a class="mathematics" href="Technologies/Nebula/index.html">Modules</a>
+                        <br>
+                        <a class="mathematics">Donate</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td class="a_research">
+                <a class="Quasar">Operating systems &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <div style="background:linear-gradient(lightgrey, #f2f2f2); opacity:1; margin:90px 10px 0 0; padding:100px 118px 100px 118px">
+                  <table style="text-align:left; margin:20px 20px; width:100%; color:white; font-size:50px">
+                    <tr>
+                      <td>
+                        <a class="mathematics" href="#">Nutrino OS</a>
+                      </td>
+                    </tr>
+                  </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div style="position:absolute; bottom:5px; left:46%">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+          
+      <!-- JS -->
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+    </div>
+
+      <!-- Bootstrap links -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
