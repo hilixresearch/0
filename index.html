@@ -252,9 +252,27 @@
                       document.getElementById("myDropdown").classList.toggle("show");
                   }
 
+<<<<<<< HEAD
                   // Close the dropdown if the user clicks outside of it
                   window.onclick = function(event) {
                     if (!event.target.matches('.products')) {
+=======
+    <!-- ____________________ Login_script _____________________________ -->
+    <script type="text/javascript">
+      // Below function Executes on click of login button.
+      function validate(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if ( username == "L" && password == "M"){
+          window.location = "Dashboard/index.html"; // redirect to dashboard
+        return false;
+        }
+        else{
+          alert("Invalid username or password.");
+        }
+      }
+    </script>
+>>>>>>> origin/master
 
                       var dropdowns = document.getElementsByClassName("dropdown-content");
                       var i;
